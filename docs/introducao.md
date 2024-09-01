@@ -4,7 +4,7 @@ As plataformas de doação online emergiram como ferramentas essenciais na era d
 
 Segundo dados da ONG World Giving Index, mais de 50% das doações globais são realizadas online, um número que cresce a cada ano. No entanto, muitas plataformas de doação ainda enfrentam desafios significativos, como interfaces de usuário complexas, falta de transparência nas transações, e dificuldades na personalização da experiência do doador. Esses obstáculos podem desmotivar potenciais doadores e dificultar a arrecadação de itens, especialmente para ONGs menores ou causas emergentes.
 
-Neste contexto, a presente pesquisa propõe o desenvolvimento de um site de doações que visa simplificar o processo de doação tanto para doadores quanto para ONGs ou indivíduos que buscam apoio. O objetivo é criar uma plataforma intuitiva, transparente e eficiente, capaz de aumentar a confiança do doador e, consequentemente, o volume de doações, ao mesmo tempo em que oferece às ONGs ferramentas para gerenciar suas campanhas de forma eficaz.
+Neste contexto, quem sofre são os necessitados que buscam todo o apoio possível para minimizar suas carências de necessidades básicas. Assim o grupo decidiu produzir uma solução para tentar abrandar ou solucionar os problemas enfrentados por essas pessoas.
 
 ## 1.1. Problema
 
