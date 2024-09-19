@@ -116,7 +116,7 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![dcu](https://github.com/user-attachments/assets/97ab1aa8-eb03-4b58-9ad5-1697d414a451)
+![dcu](https://lucid.app/lucidchart/7c3482e2-7a16-4a1a-8860-d9817a0bb182/edit?viewport_loc=-1405%2C-210%2C3411%2C2108%2C0_0&invitationId=inv_853fc45c-219f-4702-a90e-3d8b29749cc1)
 
 ### 3.4.4 Descrições das Classes 
 
