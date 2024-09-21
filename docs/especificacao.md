@@ -33,13 +33,13 @@ O Doe Aqui não fornece nenhuma forma de entrega ou recolhimento de doações.
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Página inicial |	O usuário deve escolher se deseja doar ou arrecadar. |
-| RF2	| Cadastro de ponto de coleta |	O sistema deve permitir o cadastro de um ponto de coleta. |
-| RF3 |	Pesquisar pontos de coleta	| O sistema deve permitir que o usuário pesquise o que ele deseja doar para encontrar pontos de coleta. |
-| RF4	| Instruções de doação |	O sistema precisa apresentar intruções de como doar. |
-| RF5	| Gerenciamento de ponto de coleta |	O sistema deve permitir o gerenciamento do ponto de coleta: editar, salvar e excluir. |
-| RF6	| Listagem de pontos de coleta |	O sistema deve listar os pontos de coleta. |
-| RF7	| Informações do ponto de coleta |	O sistema deve abrir as informações do ponto de coleta ao clicar. |
+| RF1 | Agendamento de entrega |	O sistema deve permitir o usuário agendar um hórario para realizar uma entrega. |
+| RF2	| Gerenciamento de ponto de doação |	O sistema deve permitir o gerenciamento do ponto de doação: criar, editar, salvar e excluir. |
+| RF3 |	históricos de coações	| O sistema deve permitir que o usuário veja seu histórico de doações. |
+| RF4	| login de empresas e pessoas físicas |	O sistema deve realizar o cadastro e login de pessoas físicas e empresas. |
+| RF5	| catálogo de demandas |	O Sistema deve ter um catálogo com todas as demandas de doações. |
+| RF6	| feedbacks (avaliações de ambas as partes) |	O sistema deve permitir o feedbacks tanto das pessoas que vai doar quanto do receptor. |
+| RF7	| Categoria de tipos de doação |	O sistema deve categorizar os tipos de doação. |
 
 ### 3.3.2 Requisitos Não Funcionais
 
