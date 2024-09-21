@@ -35,10 +35,10 @@ O Doe Aqui não fornece nenhuma forma de entrega ou recolhimento de doações.
 |--------------------|------------------------------------|----------------------------------------|
 | RF1 | Agendamento de entrega |	O sistema deve permitir o usuário agendar um hórario para realizar uma entrega. |
 | RF2	| Gerenciamento de ponto de doação |	O sistema deve permitir o gerenciamento do ponto de doação: criar, editar, salvar e excluir. |
-| RF3 |	históricos de coações	| O sistema deve permitir que o usuário veja seu histórico de doações. |
-| RF4	| login de empresas e pessoas físicas |	O sistema deve realizar o cadastro e login de pessoas físicas e empresas. |
-| RF5	| catálogo de demandas |	O Sistema deve ter um catálogo com todas as demandas de doações. |
-| RF6	| feedbacks (avaliações de ambas as partes) |	O sistema deve permitir o feedbacks tanto das pessoas que vai doar quanto do receptor. |
+| RF3 |	Históricos de coações	| O sistema deve permitir que o usuário veja seu histórico de doações. |
+| RF4	| Login de empresas e pessoas físicas |	O sistema deve realizar o cadastro e login de pessoas físicas e empresas. |
+| RF5	| Catálogo de demandas |	O Sistema deve ter um catálogo com todas as demandas de doações. |
+| RF6	| Feedbacks (avaliações de ambas as partes) |	O sistema deve permitir o feedbacks tanto das pessoas que vai doar quanto do receptor. |
 | RF7	| Categoria de tipos de doação |	O sistema deve categorizar os tipos de doação. |
 
 ### 3.3.2 Requisitos Não Funcionais
