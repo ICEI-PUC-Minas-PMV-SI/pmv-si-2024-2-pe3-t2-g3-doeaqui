@@ -38,7 +38,7 @@ O Doe Aqui não fornece nenhuma forma de entrega ou recolhimento de doações.
 | RF3 |	Históricos de doações	| O sistema deve permitir que o usuário veja seu histórico de doações. |
 | RF4	| Login de empresas e pessoas físicas |	O sistema deve realizar o cadastro e login de pessoas físicas e empresas. |
 | RF5	| Catálogo de demandas |	O Sistema deve ter um catálogo com todas as demandas de doações. |
-| RF6	| Feedbacks (avaliações de ambas as partes) |	O sistema deve permitir o feedbacks tanto das pessoas que vai doar quanto do receptor. |
+| RF6	| Feedbacks (avaliações de ambas as partes) |	O sistema deve permitir o feedbacks tanto das pessoas que vão doar quanto do receptor. |
 | RF7	| Categoria de tipos de doação |	O sistema deve categorizar os tipos de doação. |
 
 ### 3.3.2 Requisitos Não Funcionais
