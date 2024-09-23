@@ -34,7 +34,7 @@ O Doe Aqui não fornece nenhuma forma de entrega ou recolhimento de doações.
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
 | RF1 | Agendamento de entrega |	O sistema deve permitir o usuário agendar um hórario para realizar uma entrega. |
-| RF2	| Gerenciamento de ponto de doação |	O sistema deve permitir o gerenciamento do ponto de doação: criar, editar, salvar e excluir. |
+| RF2	| Gerenciamento de ponto de doação |	O sistema deve permitir o gerenciamento do ponto de doação: criar, selecionar, editar e excluir. |
 | RF3 |	Históricos de doações	| O sistema deve permitir que o usuário veja seu histórico de doações. |
 | RF4	| Login de empresas e pessoas físicas |	O sistema deve realizar o cadastro e login de pessoas físicas e empresas. |
 | RF5	| Catálogo de demandas |	O Sistema deve ter um catálogo com todas as demandas de doações. |
