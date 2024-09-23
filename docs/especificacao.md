@@ -65,7 +65,7 @@ Como observado no diagrama de casos de uso da Figura 1, o usuario poderá exerce
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](./images/Blank-diagram.jpg)
+![dcu](./images/Diagrama-casos-de-uso.jpg)
  
 ### 3.4.2 Descrições de Casos de Uso
 
