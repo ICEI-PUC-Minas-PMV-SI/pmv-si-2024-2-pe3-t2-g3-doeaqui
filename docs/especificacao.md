@@ -33,13 +33,21 @@ O Doe Aqui não fornece nenhuma forma de entrega ou recolhimento de doações.
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Agendamento de entrega |	O sistema deve permitir o usuário agendar um hórario para realizar uma entrega. |
-| RF2	| Gerenciamento de ponto de doação |	O sistema deve permitir o gerenciamento do ponto de doação: criar, selecionar, editar e excluir. |
-| RF3 |	Históricos de doações	| O sistema deve permitir que o usuário veja seu histórico de doações. |
-| RF4	| Login de empresas e pessoas físicas |	O sistema deve realizar o cadastro e login de pessoas físicas e empresas. |
-| RF5	| Catálogo de demandas |	O Sistema deve ter um catálogo com todas as demandas de doações. |
-| RF6	| Feedbacks (avaliações de ambas as partes) |	O sistema deve permitir o feedbacks tanto das pessoas que vão doar quanto do receptor. |
-| RF7	| Categoria de tipos de doação |	O sistema deve categorizar os tipos de doação. |
+| RF1 | Gerenciar Agendamento de Coleta (ou entrega da doação) |	O sistema deve permitir o cadastro, alteração e exclusão de agendamentos. |
+| RF2	| Gerenciamento doação |	O sistema deve permitir o cadastro, a alteração, a exclusão e a consulta de doações. |
+| RF3	| Gerenciar Doador |	O sistema deve permitir o cadastro, a alteração, a exclusão e a consulta de doadores. |
+| RF4	| Gerenciar Instituição |	O sistema deve permitir o cadastro, a alteração, a exclusão e a consulta de instituições. |
+| RF5	| Gerenciar Pontos de Coleta |	O sistema deve permitir o cadastro, a alteração, a exclusão e a consulta de pontos de coleta. |
+| RF6	| Gerenciar demandas |	O Sistema deve permitir que o usuário pesquise um item, ex.: Roupas, cestas básicas, materiais de construção e etc. |
+| RF7	| Gerenciar Feedbacks |	O Sistema deve permitir que o usuário cadastre, altere e exclua apenas o seu feedback. |
+| RF8	| Gerenciar notícias |	O Sistema deve permitir que o usuário cadastre, altere e exclua notícias sobre sua doação ou do doador. |
+| RF9	| Gerenciar Categorias de Doação |	O sistema deve permitir o cadastro, a alteração, a exclusão e a consulta de categorias de doações. |
+| RF10 |	Históricos de doações	| O sistema deve permitir que o usuário veja e pesquise seu histórico de doações. |
+| RF11 |	Realizar recomendações	| O sistema deve permitir que o usuário receba recomendações. |
+| RF12	| Login |	O sistema deve realizar o cadastro e login de pessoas e das instituições. |
+| RF13	| logout |	O sistema deve realizar o logout de pessoas e das instituições. |
+| RF14	| Feedbacks (avaliações de ambas as partes) |	O sistema deve permitir o feedbacks tanto das pessoas que vão doar quanto do receptor. |
+| RF15 | Gerenciar conteúdos informacionais do site |	O sistema deve permitir o cadastro, a alteração, a exclusão, e a pesquisa de conteudos no site. |
 
 ### 3.3.2 Requisitos Não Funcionais
 
