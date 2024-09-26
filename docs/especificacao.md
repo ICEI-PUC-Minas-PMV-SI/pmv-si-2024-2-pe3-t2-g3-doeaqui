@@ -44,9 +44,9 @@ O Doe Aqui não fornece nenhuma forma de entrega ou recolhimento de doações.
 | RF9	| Gerenciar Categorias de Doação |	O sistema deve permitir o cadastro, a alteração, a exclusão e a consulta de categorias de doações. |
 | RF10 |	Históricos de doações	| O sistema deve permitir que o usuário veja e pesquise seu histórico de doações. |
 | RF11 |	Realizar recomendações	| O sistema deve permitir que o usuário receba recomendações. |
-| RF12	| Login |	O sistema deve realizar o cadastro e login de pessoas e das instituições. |
+| RF12	| Login |	O sistema deve realizar o login de pessoas e das instituições. |
 | RF13	| logout |	O sistema deve realizar o logout de pessoas e das instituições. |
-| RF14	| Feedbacks (avaliações de ambas as partes) |	O sistema deve permitir o feedbacks tanto das pessoas que vão doar quanto do receptor. |
+| RF14	| Feedbacks (avaliações de ambas as partes) |	O sistema deve permitir o feedback. |
 | RF15 | Gerenciar conteúdos informacionais do site |	O sistema deve permitir o cadastro, a alteração, a exclusão, e a pesquisa de conteudos no site. |
 
 ### 3.3.2 Requisitos Não Funcionais
