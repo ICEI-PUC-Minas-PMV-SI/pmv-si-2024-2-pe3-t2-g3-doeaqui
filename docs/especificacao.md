@@ -128,12 +128,19 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 ### 3.4.4 Descrições das Classes 
 
-| # | Nome | Atributos | Métodos | Descrição |
-|--------------------|------------------------------------|----------------------------------------|------------------------------------|------------------------------------|
-| 1	|	Usuário | nome:String, e-mail:String, dataCadastro:Date | reclamar() |	Cadastro de informações e metodos relativos aos Usuários. |
-| 2	| PJ | CNPJ:Number | setCNPJ(), adicionarCliente(), excluirCliente(), editarCliente(), rastrearDoacoes() |	Cadastro de informações e metodos relativos as Pessoas Jurídicas. |
-| 3 |	PF | CPF:Number | setCPF(), doar() |	Cadastro de informações e metodos relativos as Pessoas Físicas. |
-| 4 |	Doação |	nomeItem:String, descricaoItem:String, condicoes:String | adicionarDoacao() |	Cadastro de informações e metodos relativos as Doações. |
-| 5	|	CNPJ |	CNPJ:Number |  |	Cadastro de informações relativos aos CNPJ. |
-| 6	|	CPF |	CPF:Number |  |	Cadastro de informações relativos aos CPF. |
-| 7	|	Interface Panel | | adicionarCliente(String), excluirCliente(String), editarCliente(String), rastearDoacoes() |	Cadastro de métodos relativos ao Interface Panel. |
+| # | Nome | Descrição |
+|--------------------|------------------------------------|----------------------------------------|
+| 01	|	Login |	Representa as informações de login de um usuário. Inclui nome, e-mail e a data de cadastro. Permite as ações de "reclamar", "doar" e "arrecadar". |
+| 02	| Demanda |	Descreve uma demanda com nome, descrição e data. Está associada ao catálogo de demandas. |
+| 03 |	Catalogo |	Contém uma lista de demandas. Possui atributos como nome, descrição, data, e métodos para retornar o catálogo. |
+| 04 |	Doação |	Cadastro de informações e metodos relativos as Doações. |
+| 05	|	CNPJ | Armazena o número de CNPJ de um cliente arrecadador. |
+| 06	|	CPF |	Armazena o número de CPF de um doador. |
+| 07	|	Arrecadador |	Representa um arrecadador (cliente com CNPJ). Possui métodos para adicionar, excluir, editar clientes e gerenciar doações. |
+| 08	|	Doador |	Representa um doador (cliente com CPF). Possui métodos para realizar doações e associar CPF. |
+| 09	|	GerenciamentoPontoDoacao |	Gerencia os pontos de doação. Inclui métodos para criar, selecionar, editar e excluir pontos de doação. |
+| 10	|	AgendamentoEntrega |	Trata do agendamento de entregas, incluindo a data da entrega e a categoria de produtos. |
+| 11	|	Doacao| Armazena informações sobre doações, incluindo a categoria de produtos e a condição do item (novo ou usado). Permite adicionar, listar e filtrar pontos de doação. |
+| 12	|HistoricoDoacoes |	Armazena o histórico de doações. Possui um método para verificar o histórico de doações. |
+| 13	|	FeedbackArrecadador |Armazena o feedback sobre o arrecadador, incluindo a descrição, avaliação e data do feedback. |
+| 14	|	FeedbackDoador |		Armazena o feedback sobre o doador, incluindo a descrição, avaliação e data do feedback. |
