@@ -77,46 +77,146 @@ Como observado no diagrama de casos de uso da Figura 1, o usuario poderá exerce
  
 ### 3.4.2 Descrições de Casos de Uso
 
-#### Listar Ponto de Coleta (CSU01)
+#### Gerenciar Agendamento de Coleta (CSU01)
+*Sumário:* O sistema permite que o usuário cadastre, altere ou exclua agendamentos de coleta ou entrega de doações.
 
-Sumário: O usuário consulta os pontos de coleta de acordo com os critérios de seu interesse.
+*Ator Primário:* Doador / Instituição.
 
-Ator Primário: Doador / Arrecadador.
+*Pré-condições:* O usuário deve estar autenticado no sistema.
 
-Pré-condições: N/A.
+##### Fluxo Principal:
 
-Fluxo Principal:
+O usuário acessa a funcionalidade de agendamentos.
+O sistema apresenta a lista de agendamentos existentes.
+O usuário seleciona a opção para cadastrar um novo agendamento, alterar ou excluir um agendamento existente.
+O sistema verifica a validade das informações fornecidas.
+Se as informações forem válidas, o sistema realiza a ação solicitada (cadastro, alteração ou exclusão) e exibe a confirmação.
 
-1)  O usuário acessa o sistema para buscar pontos de coleta.
-2) 	O sistema apresenta uma lista de pontos de coleta com base na localização do usuário.
-3) 	O usuário seleciona um ponto de coleta para visualizar seus detalhes.
+##### Fluxo Alternativo (3): Inclusão
 
-Fluxo Alternativo (3): Inclusão
+ - a) O usuário escolhe a opção para cadastrar um novo agendamento. 
+ - b) O sistema apresenta um formulário solicitando os dados do agendamento. 
+ - c) O usuário preenche o formulário com as informações necessárias. 
+ - d) O sistema valida as informações e, se forem válidas, cadastra o novo agendamento.
 
-a) O Arrecadador solicita a inclusão de um ponto de coleta. <br>
-b) O sistema apresenta uma janela solicitando informações do ponto de coleta. <br>
-c) O Arrecadador fornece os dados solicitados. <br>
-d) O sistema verifica se o ponto de coleta já está cadastrado. Se sim, o sistema informa o Arrecadador e retorna ao início; caso contrário, apresenta um formulário em branco para que os detalhes do ponto de coleta sejam preenchidos. <br>
-e) O sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo ponto de coleta; caso contrário, informa o erro, solicita novos dados e repete a verificação. <br>
+##### Fluxo Alternativo (3): Alteração
 
-Fluxo Alternativo (3): Remoção
+ - a) O usuário escolhe um agendamento existente e solicita sua alteração. 
+ - b) O sistema apresenta um formulário com os dados do agendamento. 
+ - c) O usuário altera os dados e envia o formulário. 
+ - d) O sistema valida as informações e, se forem válidas, atualiza o agendamento.
 
-a) O Arrecadador seleciona um ponto de coleta e solicita sua remoção. <br>
-b) Se o ponto de coleta puder ser removido, o sistema realiza a remoção; caso contrário, informa o Arrecadador. <br>
+##### Fluxo Alternativo (3): Exclusão
 
-Fluxo Alternativo (3): Alteração
+ - a) O usuário seleciona um agendamento existente e solicita sua exclusão. 
+ - b) O sistema confirma a solicitação e remove o agendamento.
 
-a) O Arrecadador altera um ou mais detalhes do ponto de coleta e solicita sua atualização. <br>
-b) O sistema verifica a validade dos dados e, se forem válidos, atualiza as informações; caso contrário, informa o erro. <br>
- 
-Fluxo Alternativo (3): Detalhes
+*Pós-condições:* O agendamento foi cadastrado, alterado ou excluído com sucesso.
 
-a) O Arrecadador opta por visualizar os detalhes de um ponto de coleta. <br>
-b) O sistema apresenta uma lista de pontos de coleta. <br>
-c) O Arrecadador seleciona o ponto de coleta desejado. <br>
-d) O sistema apresenta os detalhes do ponto de coleta em um formulário. <br>
+#### Gerenciar Doação (CSU02)
+*Sumário:* O sistema permite que o usuário cadastre, altere, exclua e consulte doações.
 
-Pós-condições: Um ponto de coleta foi inserido, removido, seus dados foram alterados ou apresentados na tela.
+*Ator Primário:* Doador.
+
+*Pré-condições:* O usuário deve estar autenticado no sistema.
+
+##### Fluxo Principal:
+
+O usuário acessa a funcionalidade de gerenciamento de doações.
+O sistema apresenta uma lista de doações existentes.
+O usuário escolhe a opção de cadastrar, alterar, excluir ou consultar uma doação.
+O sistema realiza a operação solicitada (cadastro, alteração, exclusão ou consulta) e apresenta a confirmação.
+
+##### Fluxo Alternativo (3): Inclusão
+
+ - a) O usuário escolhe cadastrar uma nova doação. 
+ - b) O sistema apresenta um formulário solicitando os detalhes da doação. 
+ - c) O usuário preenche o formulário e o sistema valida os dados. 
+ - d) O sistema cadastra a doação e apresenta a confirmação.
+
+##### Fluxo Alternativo (3): Alteração
+
+ - a) O usuário seleciona uma doação existente e solicita a alteração. 
+ - b) O sistema apresenta um formulário com os dados atuais. 
+ - c) O usuário altera os dados e o sistema valida as novas informações. 
+ - d) O sistema atualiza a doação e apresenta a confirmação.
+
+##### Fluxo Alternativo (3): Exclusão
+
+ - a) O usuário seleciona uma doação existente e solicita sua exclusão. 
+ - b) O sistema remove a doação e confirma a ação.
+
+*Pós-condições:* A doação foi cadastrada, alterada, excluída ou consultada com sucesso.
+
+#### Gerenciar Doador (CSU03)
+*Sumário:* O sistema permite que o usuario cadastre, altere, exclua e consulte seus dados como doador.
+
+*Ator Primário:* Doador.
+
+*Pré-condições:* O doador deve estar autenticado no sistema para ações diferentes da de cadastro.
+
+##### Fluxo Principal:
+
+O doador acessa a funcionalidade de gerenciamento.
+O sistema apresenta os dados do doador autenticado.
+O administrador escolhe a opção de alterar, excluir ou consultar os dados.
+O sistema realiza a operação solicitada e apresenta a confirmação.
+
+##### Fluxo Alternativo (3): Inclusão
+
+ - a) O doador seleciona a opção de cadastrar um novo doador. 
+ - b) O sistema solicita as informações necessárias. 
+ - c) O doador preenche o formulário e o sistema valida os dados. 
+ - d) O sistema cadastra o novo doador.
+
+##### Fluxo Alternativo (3): Alteração
+
+ - a) O doador seleciona um doador existente e solicita a alteração de seus dados. 
+ - b) O sistema apresenta os dados do doador e permite a edição. 
+ - c) O doador altera os dados e o sistema valida as novas informações. 
+ - d) O sistema atualiza o cadastro do doador.
+
+##### Fluxo Alternativo (3): Exclusão
+
+ - a) O doador solicita a exclusão da sua conta. 
+ - b) O sistema remove o cadastro do doador e apresenta a confirmação.
+
+*Pós-condições:* O doador foi cadastrado, alterado, excluído ou consultado com sucesso.
+
+#### Gerenciar Instituição (CSU04)
+*Sumário:* O sistema permite que o administrador cadastre, altere, exclua e consulte instituições.
+
+*Ator Primário:* Administrador.
+
+*Pré-condições:* O administrador deve estar autenticado no sistema.
+
+##### Fluxo Principal:
+
+O administrador acessa a funcionalidade de gerenciamento de instituições.
+O sistema apresenta uma lista de instituições existentes.
+O administrador escolhe a opção de cadastrar, alterar, excluir ou consultar uma instituição.
+O sistema realiza a operação solicitada e apresenta a confirmação.
+
+##### Fluxo Alternativo (3): Inclusão
+
+ - a) O administrador escolhe cadastrar uma nova instituição. 
+ - b) O sistema solicita os dados da instituição. 
+ - c) O administrador preenche o formulário e o sistema valida os dados. 
+ - d) O sistema cadastra a instituição.
+
+##### Fluxo Alternativo (3): Alteração
+
+ - a) O administrador seleciona uma instituição existente e solicita a alteração. 
+ - b) O sistema apresenta os dados da instituição para edição. 
+ - c) O administrador altera os dados e o sistema valida as novas informações. 
+ - d) O sistema atualiza o cadastro da instituição.
+
+##### Fluxo Alternativo (3): Exclusão
+
+ - a) O administrador seleciona uma instituição existente e solicita sua exclusão. 
+ - b) O sistema remove a instituição e confirma a ação.
+
+*Pós-condições:* A instituição foi cadastrada, alterada, excluída ou consultada com sucesso.
 
 ### 3.4.3 Diagrama de Classes 
 
