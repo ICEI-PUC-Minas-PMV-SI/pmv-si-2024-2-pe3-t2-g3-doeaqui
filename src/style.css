@@ -1,0 +1,254 @@
+:root {
+    --color-beige: #e0e4ce;
+    --color-sage: #6e9987;
+    --color-dark-green: #114d4d;
+    --color-gray: #2d3839;
+    --color-brown: #27191c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-beige);
+    color: var(--color-gray);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-dark-green);
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--color-beige);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links a {
+    color: var(--color-beige);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.nav-links a:hover {
+    color: var(--color-sage);
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: var(--color-beige);
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--color-dark-green);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: var(--color-sage);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--color-dark-green);
+}
+
+.cta-button svg {
+    margin-left: 0.5rem;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background-color: white;
+    padding: 4rem 0;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-dark-green);
+    margin-bottom: 3rem;
+}
+
+.steps {
+    display: grid;
+    gap: 2rem;
+}
+
+.step {
+    background-color: var(--color-beige);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-sage);
+    margin-bottom: 1rem;
+}
+
+.step h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Projects Section */
+.projects {
+    padding: 4rem 0;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-dark-green);
+    margin-bottom: 3rem;
+}
+
+.project-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    margin-bottom: 1rem;
+}
+
+.learn-more {
+    color: var(--color-sage);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.learn-more:hover {
+    color: var(--color-dark-green);
+}
+
+.learn-more svg {
+    margin-left: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-brown);
+    color: var(--color-beige);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: var(--color-beige);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    color: var(--color-sage);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
