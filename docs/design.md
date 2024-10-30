@@ -13,6 +13,7 @@ Objetivos: Ajudar causas ambientais e sociais localmente. <br/>
 Desafios: Falta de informação sobre ONGs confiáveis, pouco tempo para pesquisar. <br/>
 Motivações: Contribuir para um mundo melhor, participar ativamente de causas comunitárias. <br/>
 
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Joao%20Pereira.jpeg)
 - Persona 2: João Pereira (Doador) <br/>
 Idade: 45 anos <br/>
 Ocupação: Empresário <br/>
@@ -21,7 +22,7 @@ Perfil: João é um empresário bem-sucedido que gosta de ajudar financeiramente
 Objetivos: Apoiar projetos educacionais e de assistência social. <br/>
 Desafios: Falta de tempo para pesquisar sobre ONGs, desconfiança em relação a algumas instituições. <br/>
 Motivações: Deixar um legado positivo, responsabilidade social empresarial. <br/>
-
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Fernanda%20Costa.jpeg)
 - Persona 3: Fernanda Costa (Doadora) <br/>
 Idade: 33 anos <br/>
 Ocupação: Professora <br/>
@@ -31,6 +32,7 @@ Objetivos: Apoiar ONGs que trabalham com crianças e educação. <br/>
 Desafios: Encontrar organizações transparentes onde a doação tenha impacto direto. <br/>
 Motivações: Melhorar a educação, dar oportunidades a mais crianças. <br/>
 
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Lucas%20Mendes.jpeg)
 - Persona 4: Lucas Mendes (Proprietário de ONG) <br/>
 Idade: 38 anos <br/>
 Ocupação: Fundador e Diretor de uma ONG <br/>
@@ -40,6 +42,7 @@ Objetivos: Aumentar a captação de recursos, ampliar o número de famílias ate
 Desafios: Baixa visibilidade, falta de recursos para ações de marketing. <br/>
 Motivações: Reduzir a pobreza, oferecer suporte a famílias necessitadas. <br/>
 
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Face.jpeg)
 - Persona 5: Ana Paula Oliveira (Proprietária de ONG) <br/>
 Idade: 42 anos <br/>
 Ocupação: Coordenadora de Projetos em uma ONG <br/>
@@ -49,6 +52,7 @@ Objetivos: Obter mais doações para expandir os serviços oferecidos. <br/>
 Desafios: Captar doações de forma eficaz, aumentar a visibilidade da ONG. <br/>
 Motivações: Proteger e empoderar mulheres, criar uma rede de suporte amplo. <br/>
 
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Rafael%20Santos.jpeg)
 - Persona 6: Rafael Santos (Proprietário de ONG) <br/>
 Idade: 30 anos <br/>
 Ocupação: Diretor de uma ONG <br/>
@@ -58,6 +62,7 @@ Objetivos: Garantir fundos constantes para a ONG, ampliar as atividades resgates
 Desafios: Comunicação com doadores, manutenção de doações regulares. <br/>
 Motivações: Proteger os animais, conseguir doações para expandir o abrigo. <br/>
 
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Beatriz%20Fernandes.jpeg)
 - Persona 7: Beatriz Fernandes (Doadora) <br/>
 Idade: 27 anos <br/>
 Ocupação: Engenheira de Software <br/>
