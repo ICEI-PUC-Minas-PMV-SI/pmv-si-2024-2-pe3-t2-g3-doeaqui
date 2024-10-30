@@ -72,7 +72,7 @@ body {
     padding: 5rem 0;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 2.5rem;
     color: var(--color-dark-green);
     margin-bottom: 1rem;

@@ -141,7 +141,26 @@ h2 {
     min-height: 200px;
 }
 
+footer {
+    background-color: var(--color-brown);
+    color: var(--color-beige);
+    padding: 2rem 0;
+    text-align: center;
+}
 
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: var(--color-beige);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    color: var(--color-sage);
+}
 
 @media (min-width: 768px) {
     .dashboard {
@@ -152,3 +171,37 @@ h2 {
         flex: 1;
     }
 }
+
+@media (min-width: 768px) {
+
+
+    
+    .nav-links {
+        display: flex;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
