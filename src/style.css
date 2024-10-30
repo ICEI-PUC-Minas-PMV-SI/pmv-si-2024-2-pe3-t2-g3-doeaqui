@@ -67,14 +67,39 @@ body {
 }
 
 /* Hero Section */
+
+
 .hero {
+    position: relative;
+    background-image: url('../src/Imagens/04.jpg'); /* Substitua pela URL da sua imagem real */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-beige);
+    padding: 8rem 0;
     text-align: center;
-    padding: 5rem 0;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay escuro semi-transparente */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    color: var(--color-dark-green);
+    font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
@@ -87,6 +112,7 @@ body {
     background-color: var(--color-sage);
     color: white;
     border: none;
+    margin: 7px;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     font-weight: 600;
@@ -94,7 +120,7 @@ body {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
@@ -105,10 +131,25 @@ body {
     margin-left: 0.5rem;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
 /* How It Works Section */
 .how-it-works {
     background-color: white;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .how-it-works h2 {

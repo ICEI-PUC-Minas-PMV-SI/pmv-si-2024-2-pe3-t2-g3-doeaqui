@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn | Projeto Doe Aqui</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <form method="post" id="form" action="/">
+        <div class="svg-div">
+          <svg></svg>
+        </div>
+        <div class="email-field">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+            aria-autocomplete="inline"
+          />
+        </div>
+        <div class="pass-field">
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            placeholder="Senha"
+            required
+            aria-autocomplete="inline"
+          />
+          <svg class="plocker"></svg>
+        </div>
+        <div class="pass-div">
+          <label for="check">Lembrar Senha</label>
+          <input type="checkbox" id="check" name="check" checked />
+        </div>
+        <div class="radio-div">
+          <label for="cpf">PF</label>
+          <input type="radio" id="cpf" name="radio" />
+          <label for="cnpj">PJ</label>
+          <input type="radio" id="cnpj" name="radio" placeholder="CNPJ" />
+        </div>
+        <br />
+        <button type="submit">Login</button>
+        <a href="#" class="forgot-pass">Esqueceu a senha? Clique aqui</a>
+        <span>Ou</span>
+        <a href="#" class="non-registered"
+          >Não Possui Cadastro Ainda? Cadastre-se</a
+        >
+      </form>
+    </main>
+  </body>
+  <script src="./assets/iconloader.js" defer></script>
+</html>

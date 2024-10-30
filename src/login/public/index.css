@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  font-size: 10px;
+}
+*:not(h1) {
+  font-size: 2rem;
+}
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  background-color: darkslategray;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: slategray;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: black;
+  opacity: 50%;
+}
+a:hover {
+  opacity: 100%;
+}
+main {
+  position: relative;
+  width: inherit;
+  height: 800px;
+  display: inherit;
+  text-align: center;
+  flex-direction: inherit;
+  justify-content: center;
+  align-items: inherit;
+  text-align: center;
+  color: inherit;
+}
+main > form {
+  position: fixed;
+  text-align: center;
+  padding: 2rem;
+  max-width: 500px;
+  max-height: 100%;
+  display: inherit;
+  flex-direction: column;
+  text-align: center;
+
+  gap: 2rem;
+  border: 1px solid white;
+  background: #f2f0ef;
+}
+form .svg-div {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.svg-div svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-15%);
+}
+form > .email-field {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+form > .pass-field {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.pass-field > svg {
+  position: absolute;
+  left: 80%;
+  top: 20%;
+}
+form > .pass-div {
+  text-align: start;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input::placeholder {
+  outline: none;
+  border: none;
+  color: slategray;
+}
+input {
+  padding: 1rem;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"]:nth-child(odd) {
+  width: inherit;
+}
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: white;
+  background: darkslategray;
+  padding: 1rem;
+  transition: all 1s ease;
+}
+button:hover {
+  background: slategray;
+  transition: all 1s ease;
+}
+@media only screen and (max-width: 600px) {
+  main > form {
+    padding: 1rem;
+    margin: 10rem 1rem;
+  }
+}
