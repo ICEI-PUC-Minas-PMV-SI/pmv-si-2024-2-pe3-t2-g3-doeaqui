@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 4, nome: "Campanha 4", descricao: "Descrição da Campanha 4", doacoes: ['material escolar'], dtInicio: '01/03/2025', dtFim: '01/04/2025', pontosDeColeta: ['ponto10', 'ponto11'] },
         { id: 5, nome: "Campanha 5", descricao: "Descrição da Campanha 5", doacoes: ['calçados', 'roupa'], dtInicio: '10/02/2025', dtFim: '10/03/2025', pontosDeColeta: ['ponto12', 'ponto13', 'ponto14'] }
     ];
-    if(usuarioLogado.tipoUsuario === TIPOS_USUARIO.DOADOR) document.querySelector('.btn-nova-campanha').hidden = true;
+    if(usuarioLogado.tipoUsuario === TIPOS_USUARIO.DOADOR ){
+        document.querySelector('.btn-nova-campanha').hidden = true;
+    }
 
     const listaCampanhas = document.getElementById('lista-campanhas');
     const detalhesCampanha = document.getElementById('detalhes-campanha');
@@ -59,10 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderizarCampanhas(campanhasFiltradas);
     });
 
-
-    function montaInformacoesCampanha(){
-
-    }
 
     renderizarCampanhas(campanhas);
 });

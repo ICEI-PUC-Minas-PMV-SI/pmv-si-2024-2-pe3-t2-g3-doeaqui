@@ -260,22 +260,6 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    .btn-nova-campanha {
-        padding: 0.5rem 1rem;
-        height: 32px;
-        background-color: var(--color-dark-green);
-        color: var(--color-beige);
-        border-radius: 14px;
-        border: none;
-        margin-bottom: 16px;
-        cursor: pointer;
-        font-weight: bold;
-
-        &:hover {
-            background-color: var(--color-beige);
-            color: var(--color-dark-green);
-        }
-    }
 }
 
 .btn-icon {
