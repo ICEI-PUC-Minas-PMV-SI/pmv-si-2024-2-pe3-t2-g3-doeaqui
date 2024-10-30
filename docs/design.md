@@ -5,6 +5,7 @@ Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar
 
 - Persona 1: Maria Silva (Doadora)
 Idade: 29 anos
+\n
 Ocupação: Analista de Marketing Digital
 Localização: São Paulo, SP
 Perfil: Maria é uma profissional de marketing digital apaixonada por causas ambientais e sociais. Sempre quis fazer doações, mas muitas vezes não sabe onde nem como encontrar organizações confiáveis.
