@@ -25,6 +25,7 @@ body {
 .main-content {
     flex: 1 0 auto;
 }
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -125,6 +126,8 @@ h2 {
 }
 
 .campanha-item {
+    display: flex;
+    justify-content: space-between;
     padding: 0.75rem;
     background-color: var(--color-beige);
     border-radius: 0.25rem;
@@ -139,6 +142,61 @@ h2 {
 
 .detalhes-campanha {
     min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+
+    .doacoes {
+        display: flex;
+        flex-direction: column;
+
+        & div {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .badge-doacao {
+            background-color: var(--color-sage);
+            padding: 2px 8px;
+            border-radius: 50px;
+            color: var(--color-beige);
+        }
+    }
+
+    .datas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .campanha-descricao {
+        max-height: 200px;
+        overflow: auto;
+        padding: 0.5rem;
+    }
+
+    .pontosDeColeta {
+        display: flex;
+        gap: 0.5rem;
+        overflow-x: auto;
+        margin-top: auto;
+
+        .badge-ptDoacao {
+            height: 6rem;
+            width: 6rem;
+            background-color: var(--color-sage);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+        }
+    }
+
+
 }
 
 footer {
@@ -175,7 +233,7 @@ footer {
 @media (min-width: 768px) {
 
 
-    
+
     .nav-links {
         display: flex;
     }
@@ -195,6 +253,32 @@ footer {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.campanha-ativa-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn-icon {
+    background-color: var(--color-beige);
+    padding: 4px;
+    border-radius: 4px;
+    color: var(--color-dark-green);
+    cursor: pointer;
+
+
+    &:hover {
+        background-color: var(--color-dark-green);
+        color: var(--color-beige);
+
+        &[cor='red'] {
+            background-color: #fa6d6d;
+        }
+    }
+
 }
 
 @media (min-width: 1024px) {
