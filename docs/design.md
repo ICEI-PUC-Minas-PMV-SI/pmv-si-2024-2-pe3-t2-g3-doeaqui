@@ -3,7 +3,7 @@
 ## 4.1 Personas
 Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar uma persona por integrante do projeto. Sugere-se a utilização do gerador de personas disponibilizado ao final da página https://www.rdstation.com/blog/marketing/persona-o-que-e/.
 
-/docs/images/Maria Silva.jpeg
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Maria%20Silva.jpeg)
 - Persona 1: Maria Silva (Doadora) <br/>
 Idade: 29 anos <br/>
 Ocupação: Analista de Marketing Digital <br/>
