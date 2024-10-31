@@ -12,8 +12,11 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     height: 100%;
+}
+
+body {
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
@@ -31,6 +34,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    flex: 1 0 auto; /* Isso faz o container expandir */
 }
 
 /* Navbar */
@@ -77,6 +81,8 @@ h1 {
     font-size: 2rem;
     color: var(--color-dark-green);
     margin-bottom: 2rem;
+    text-align: center;
+    padding-top: 15px;
 }
 
 h2 {
@@ -196,14 +202,14 @@ h2 {
         }
     }
 
-
 }
 
 footer {
     background-color: var(--color-brown);
     color: var(--color-beige);
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
+    flex-shrink: 0; /* Impede que o footer encolha */
 }
 
 .footer-links {
@@ -218,6 +224,17 @@ footer {
 
 .footer-links a:hover {
     color: var(--color-sage);
+}
+
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1400px; /* Aumenta a largura máxima para telas muito grandes */
+    }
+
+    /* Adiciona um min-height ao conteúdo principal para garantir que ele ocupe pelo menos a altura da viewport menos o header e footer */
+    main {
+        min-height: calc(100vh - 100px); /* Ajuste o valor 100px de acordo com a altura do seu header + footer */
+    }
 }
 
 @media (min-width: 768px) {
