@@ -7,7 +7,7 @@ Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar
 ![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/MariaSilva/Maria%20Silva-1.png)
 <br/>
 
-![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/JoaoPereira/Joao%20Pereira-1.png)
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/Jo%C3%A3oPereira/Jo%C3%A3o%20Pereira-1.png)
 <br/>
 
 ![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/FernandaCosta/Fernanda%20Costa-1.png)
@@ -19,10 +19,10 @@ Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar
 ![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/Ana%20PaulaOliveira/Ana%20Paula%20Oliveira-1.png)
 <br/>
 
-![alt text](hhttps://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/RafaelSantos/Rafael%20Santos-1.png)
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/RafaelSantos/Rafael%20Santos-1.png)
 <br/>
 
-![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/BeatrizFernandes/Beatriz%20Fernandes.png)
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/BeatrizFernandes/Beatriz%20Fernandes-1.png)
 <br/>
 <br/>
 
