@@ -71,7 +71,7 @@ body {
 
 .hero {
     position: relative;
-    background-image: url('../src/Imagens/04.jpg'); /* Substitua pela URL da sua imagem real */
+    background-image: url('/images/04.jpg'); /* Substitua pela URL da sua imagem real */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
