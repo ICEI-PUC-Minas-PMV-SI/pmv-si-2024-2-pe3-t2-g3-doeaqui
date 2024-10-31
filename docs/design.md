@@ -4,7 +4,7 @@
 Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar uma persona por integrante do projeto. Sugere-se a utilização do gerador de personas disponibilizado ao final da página https://www.rdstation.com/blog/marketing/persona-o-que-e/.
 
 
-https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/Maria%20Silva.pdf
+[Link to PDF](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/Maria%20Silva.pdf)
 
 
 
