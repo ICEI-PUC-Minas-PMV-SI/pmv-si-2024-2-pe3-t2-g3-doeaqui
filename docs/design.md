@@ -4,7 +4,7 @@
 Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar uma persona por integrante do projeto. Sugere-se a utilização do gerador de personas disponibilizado ao final da página https://www.rdstation.com/blog/marketing/persona-o-que-e/.
 
 
-[Link to PDF](docs/images/Personas/Maria Silva.pdf)
+[Link to PDF](/docs/images/Personas/Maria Silva.pdf)
 
 
 
