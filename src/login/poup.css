@@ -1,0 +1,76 @@
+:root {
+    --color-beige: #e0e4ce;
+    --color-sage: #6e9987;
+    --color-dark-green: #114d4d;
+    --color-gray: #2d3839;
+    --color-brown: #27191c;
+    font-size: 10px;
+  }
+  
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .close-modal-btn {
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+  }
+  
+  /* Estilos do container modal */
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e0e4ce;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .button-container {
+    display: flex;
+    padding: 0 5rem;
+  }
+  
+  .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  /* Exibir o modal quando ativo */
+  .modal-overlay.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal-overlay.show .modal-container {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

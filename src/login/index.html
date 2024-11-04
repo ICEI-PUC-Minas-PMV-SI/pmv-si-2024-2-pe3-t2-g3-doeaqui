@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn | Projeto Doe Aqui</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./poup.css" />
+  </head>
+  <body>
+    <main>
+      <form method="post" id="form" action="/">
+        <div class="svg-div">
+          <svg></svg>
+        </div>
+        <div class="email-field">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+            aria-autocomplete="inline"
+          />
+          <div class="mailer-div"></div>
+        </div>
+        <div class="pass-field">
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            placeholder="Senha"
+            required
+            aria-autocomplete="inline"
+          />
+          <div class="locker-div plocker"></div>
+        </div>
+        <div class="pass-div">
+          <label for="check">Lembrar Senha</label>
+          <input type="checkbox" id="check" name="check" checked />
+        </div>
+        <br />
+        <div class="radio-div">
+          <label for="cpf">PF</label>
+          <input type="radio" id="cpf" name="radio" />
+          <label for="cnpj">PJ</label>
+          <input type="radio" id="cnpj" name="radio" />
+        </div>
+        <br />
+        <button type="submit">Login</button>
+        <a href="#" class="forgot-pass">Esqueceu a senha? Clique aqui</a>
+        <span>Ou</span>
+        <button type="button" onclick="openModal()" class="non-register">
+          Não Possui Cadastro Ainda? Cadastre-se
+        </button>
+      </form>
+
+      <!-- Choice Modal -->
+      <div class="modal">
+        <div class="modal-overlay" id="modal_choice">
+          <div class="modal-container">
+            <button class="close-modal-btn" onclick="closeModal()">×</button>
+            <h2>Escolha seu tipo de cadastro:</h2>
+            <br/>
+            <p>Para prosseguir,
+              escolha se deseja se cadastrar como uma Pessoa Física(PF) ou Jurídica(PJ).</p>
+            <div class="button-container">
+              <button onclick="openPFModal()" class="choice-button">PF</button>
+              <button onclick="openPJModal()" class="choice-button">PJ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Choice Modal End-->
+
+      <!-- PF Dialog -->
+      <div class="modal">
+        <div class="modal-overlay" id="modal_pf">
+          <div class="modal-container">
+            <button class="close-modal-btn" onclick="closePFModal()">×</button>
+            <h1>Registro</h1>
+            <div id="svg_pf"></div>
+            <form id="pf_form">
+              <div class="choice-inpt">
+                <input type="text" id="CPF" name="CPF" placeholder="CPF" maxlength="14" />
+              </div>
+              <div class="email-field">
+                <input
+                  type="email"
+                  id="pfMail"
+                  name="pfMail"
+                  placeholder="Email"
+                  required
+                />
+                <div class="mailer-div"></div>
+              </div>
+              <div class="pass-field">
+                <input
+                  type="password"
+                  id="pfPass"
+                  name="pfPass"
+                  placeholder="Senha"
+                  required
+                />
+                <div class="locker-div plocker"></div>
+              </div>
+              <div class="address-field">
+                <input
+                  type="text"
+                  id="pfEnd"
+                  name="pfEnd"
+                  placeholder="Endereço"
+                  required
+                />
+              </div>
+              <div class="contact-field">
+                <input
+                  type="text"
+                  id="pfContato"
+                  name="pfContato"
+                  placeholder="Contato"
+                  required
+                />
+              </div>
+              <div class="buttons">
+                <button type="button" onclick="closeModal()">Voltar</button>
+                <button type="submit">Cadastrar-se</button>
+              </div>
+            </form>
+          </div>
+        </div>
+              <!-- PF Dialog End -->
+              <!--PJ Dialog Start--> 
+              <div class="modal">
+        <div class="modal-overlay" id="modal_pj">
+          <div class="modal-container">
+            <button class="close-modal-btn" onclick="closePJModal()">×</button>
+            <h1>Registro</h1>
+            <div id="svg_pj"></div>
+            <form>
+              <div class="choice-inpt">
+                <input type="text" id="CNPJ" name="CNPJ" placeholder="CNPJ" />
+              </div>
+              <div class="email-field">
+                <input
+                  type="email"
+                  id="pjMail"
+                  name="pjMail"
+                  placeholder="Email"
+                  required
+                />
+                <div class="mailer-div"></div>
+              </div>
+              <div class="pass-field">
+                <input
+                  type="password"
+                  id="pjPass"
+                  name="pjPass"
+                  placeholder="Senha"
+                  required
+                />
+                <div class="locker-div plocker"></div>
+              </div>
+              <div class="address-field">
+                <input
+                  type="text"
+                  id="pjEnd"
+                  name="pjEnd"
+                  placeholder="Endereço"
+                  required
+                />
+              </div>
+              <div class="contact-field">
+                <input
+                  type="text"
+                  id="pjContato"
+                  name="pjContato"
+                  placeholder="Contato"
+                  required
+                />
+              </div>
+              <div class="buttons">
+                <button type="button" onclick="closeModal()">Voltar</button>
+                <button type="submit">Cadastrar-se</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </body>
+
+  <script>
+    function openModal() {
+      const modal_choice = document.getElementById("modal_choice");
+      modal_choice.classList.add("show");
+      console.log(modal_choice);
+    }
+
+    function closeModal() {
+      const modal_choice = document.getElementById("modal_choice");
+      modal_choice.classList.remove("show");
+    }
+    function openPFModal() {
+      const modal_pf = document.getElementById("modal_pf");
+      const modal_choice = document.getElementById("modal_choice");
+      modal_choice.classList.remove("show");
+      modal_pf.classList.add("show");
+      console.log(modal_pf);
+    }
+    function closePFModal() {
+      const modal_pf = document.getElementById("modal_pf");
+      modal_pf.classList.remove("show");
+    }
+    function openPJModal(){
+      const modal_pj = document.getElementById("modal_pj");
+      const modal_choice = document.getElementById("modal_choice");
+      modal_choice.classList.remove("show");
+      modal_pj.classList.add("show");
+      console.log(modal_pj);
+    }
+    function closePJModal(){
+      const modal_pj = document.getElementById("modal_pj");
+      modal_pj.classList.remove("show");
+    }
+  </script>
+
+  <script src="./assets/iconloader.js" defer></script>
+  <script src="./assets/poup.js" defer></script>
+  <script src="./assets/formHandler.js" defer></script>
+</html>

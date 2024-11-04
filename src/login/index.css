@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
+  --color-beige: #e0e4ce;
+  --color-sage: #6e9987;
+  --color-dark-green: #114d4d;
+  --color-gray: #2d3839;
+  --color-brown: #27191c;
   font-size: 10px;
 }
+
 *:not(h1) {
   font-size: 2rem;
 }
@@ -12,24 +18,26 @@ body {
   flex-direction: column;
   place-content: center;
   place-items: center;
-  background-color: darkslategray;
+  background-color: var(--color-dark-green);
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  color: slategray;
 }
 * {
   font-family: "Poppins", sans-serif;
 }
 a {
-  color: black;
+  color: var(--color-dark-green);
   opacity: 50%;
 }
 a:hover {
   opacity: 100%;
+}
+span {
+  color: var(--color-dark-green);
 }
 main {
   position: relative;
@@ -41,7 +49,7 @@ main {
   justify-content: center;
   align-items: inherit;
   text-align: center;
-  color: inherit;
+  color: var(--color-dark-green);
 }
 main > form {
   position: fixed;
@@ -52,10 +60,9 @@ main > form {
   display: inherit;
   flex-direction: column;
   text-align: center;
-
   gap: 2rem;
   border: 1px solid white;
-  background: #f2f0ef;
+  background: var(--color-beige);
 }
 form .svg-div {
   position: relative;
@@ -67,20 +74,45 @@ form .svg-div {
   left: 50%;
   transform: translateX(-15%);
 }
-form > .email-field {
+.email-field {
   display: flex;
   position: relative;
   width: 100%;
 }
-form > .pass-field {
+.contact-field {
   display: flex;
   position: relative;
   width: 100%;
 }
-.pass-field > svg {
-  position: absolute;
-  left: 80%;
-  top: 20%;
+.pass-field {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.choice-inpt {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.address-field {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.mailer-div {
+  max-width: 20px;
+  padding: 10px;
+  max-height: 17px;
+  margin-right: 20%;
+}
+.locker-div {
+  max-width: 20px;
+  padding: 10px;
+  max-height: 17px;
+  margin-right: 20%;
+}
+.locker-div > svg {
+  cursor: pointer !important;
 }
 form > .pass-div {
   text-align: start;
@@ -88,10 +120,12 @@ form > .pass-div {
 input[type="email"],
 input[type="password"],
 input[type="text"],
+input[type="number"],
 input::placeholder {
   outline: none;
   border: none;
-  color: slategray;
+  color: var(--color-dark-green);
+  background: none;
 }
 input {
   padding: 1rem;
@@ -104,15 +138,28 @@ input[type="text"]:nth-child(odd) {
 button {
   cursor: pointer;
   background: transparent;
+  display: block;
+  margin: auto;
   border: none;
-  color: white;
-  background: darkslategray;
+  outline: none;
+  color: var(--color-beige);
+  background: var(--color-sage);
   padding: 1rem;
   transition: all 1s ease;
 }
 button:hover {
-  background: slategray;
+  background: var(--color-dark-green);
   transition: all 1s ease;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 @media only screen and (max-width: 600px) {
   main > form {
