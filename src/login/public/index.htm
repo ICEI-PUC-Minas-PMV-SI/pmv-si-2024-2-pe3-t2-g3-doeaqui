@@ -31,6 +31,8 @@
             name="pass"
             placeholder="Senha"
             required
+            minlength="10"
+            maxlength="14"
             aria-autocomplete="inline"
           />
           <div class="locker-div plocker"></div>
@@ -41,10 +43,10 @@
         </div>
         <br />
         <div class="radio-div">
-          <label for="cpf">PF</label>
-          <input type="radio" id="cpf" name="radio" />
-          <label for="cnpj">PJ</label>
-          <input type="radio" id="cnpj" name="radio" />
+          <label for="cpf">PF(Pessoa Física)</label>
+          <input type="radio" id="cpf" name="radio" aria-label="PF" required />
+          <label for="cnpj">PJ(Pessoa Jurídica)</label>
+          <input type="radio" id="cnpj" name="radio" aria-label="PJ" required checked  />
         </div>
         <br />
         <button type="submit">Login</button>
@@ -101,6 +103,8 @@
                   name="pfPass"
                   placeholder="Senha"
                   required
+                  minlength="10"
+                  maxlength="14"
                 />
                 <div class="locker-div plocker"></div>
               </div>
@@ -113,17 +117,21 @@
                   required
                 />
               </div>
+              <div class="address-field">
+                <input type="text" id="pfEndNum" name="pfEndNum" placeholder="Numero Endereço" required/>
+              </div>
               <div class="contact-field">
                 <input
-                  type="text"
-                  id="pfContato"
-                  name="pfContato"
+                  type="tel"
+                  maxlength="16"
+                  id="pfContact"
+                  name="pfContact"
                   placeholder="Contato"
                   required
                 />
               </div>
               <div class="buttons">
-                <button type="button" onclick="closeModal()">Voltar</button>
+                <button type="button" onclick="closePFModal()">Voltar</button>
                 <button type="submit">Cadastrar-se</button>
               </div>
             </form>
@@ -137,9 +145,9 @@
             <button class="close-modal-btn" onclick="closePJModal()">×</button>
             <h1>Registro</h1>
             <div id="svg_pj"></div>
-            <form>
+            <form id="pj_form" method="post" action="/">
               <div class="choice-inpt">
-                <input type="text" id="CNPJ" name="CNPJ" placeholder="CNPJ" />
+                <input type="text" id="CNPJ" name="CNPJ" placeholder="CNPJ" maxlength="18" />
               </div>
               <div class="email-field">
                 <input
@@ -170,27 +178,30 @@
                   required
                 />
               </div>
+              <div class="address-field"> 
+                <input type="number" id="pjEndNum" name="pjEndNum" placeholder="Numero Endereço" required/>
+              </div>
               <div class="contact-field">
                 <input
-                  type="text"
-                  id="pjContato"
-                  name="pjContato"
+                  type="tel"
+                  id="pjContact"
+                  name="pjContact"
                   placeholder="Contato"
+                  maxlength="16"
                   required
                 />
               </div>
               <div class="buttons">
-                <button type="button" onclick="closeModal()">Voltar</button>
+                <button type="button" onclick="closePJModal()">Voltar</button>
                 <button type="submit">Cadastrar-se</button>
               </div>
             </form>
           </div>
         </div>
-
       </div>
     </main>
   </body>
-
+  <script src="./assets/storage.js" defer></script>
   <script>
     function openModal() {
       const modal_choice = document.getElementById("modal_choice");
@@ -225,8 +236,8 @@
       modal_pj.classList.remove("show");
     }
   </script>
-
   <script src="./assets/iconloader.js" defer></script>
-  <script src="./assets/poup.js" defer></script>
-  <script src="./assets/formHandler.js" defer></script>
+  <script src="./assets/loginHandler.js" defer></script>
+  <script src="./assets/cpfHandler.js" defer></script>
+  <script src="./assets/cnpjHandler.js" defer></script>
 </html>

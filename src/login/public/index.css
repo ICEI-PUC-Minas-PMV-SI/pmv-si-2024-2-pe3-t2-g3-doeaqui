@@ -121,6 +121,7 @@ input[type="email"],
 input[type="password"],
 input[type="text"],
 input[type="number"],
+input[type="tel"],
 input::placeholder {
   outline: none;
   border: none;
