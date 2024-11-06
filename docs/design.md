@@ -54,19 +54,12 @@ Login:
 
 <code>
 - Proximidade: Nota-se que os elementos de email e senha possuem uma proximidade maior entre si, já que ambos fazem parte do mesmo grupo de input(entrada de dados), que no caso seria de campo. O mesmo se verifica para os dois botões para que o usuário selecione se irá logar como uma Pessoa Física(PF) ou Pessoa Jurídica(PJ) e para os elementos do rodapé do formulário em caso de esquecimento de senha ou o usuário ainda não for registrado no sistema.
-
 - Boa Continuidade: O formulário foi alinhado em forma de coluna, por convenção, de forma a manter os padrões para que o usuário tenha facilidade de entender as informações sequencialmente.
-
 - Simetria: A tela possui simetria. As medidas para a margem e espaçamento interno(padding) foram aplicadas de forma espelhada para minimizar o máximo possível o estranhamento visual do usuário.
-
 - Similaridade: Os principais grupos do formulário são: campo(email e senha), opção não obrigatória(caixa de Lembrar Senha), opção obrigatória(botões circulares) e links suplementares(Esqueceu a senha, Cadastre-se).
-
 - Destino Comum: Os elementos dentros de um mesmo grupo estão alinhados corretamente para garantir a visualização como um grupo elementar. Enquanto os campos e o resto dos grupos estão em ordem vertical, os radio buttons estão em ordem horizontal(lado a lado).
-
 - Fecho: O formulário está dentro de um container delimitado por uma borda e centralizado, evidenciando um container fechado com as informações principais contidas em si.
-
 - Região Comum: Cada grupo é determinado como um container individual, e por isso todos os elementos pertencentes a um mesmo grupo se encontram localizados internamente a um mesmo container, delimitado por medidas de posicionamento, margem e padding.
-
 - Conectividade: Este princípio foi utilizado para os ícones localizados dentro de um campo e nomes dos radio buttons(botões circulares). No caso dos ícones, verifica-se claramente uma conexão entre os campos de email e senha e os ícones alinhados à sua horizontal, explicitando um relacionamento entre eles. Já no caso dos radio buttons os nomes para determinar o significado do botão estão alinhados à esquerda.
 <br/>
 Regras de Ouro:
