@@ -1,7 +1,20 @@
+
+<style>
+  .container{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  height:100%;
+  background-color:white;
+ }
+</style>
+
 # 4. PROJETO DO DESIGN DE INTERAÇÃO
+
 
 ## 4.1 Personas
 Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar uma persona por integrante do projeto. Sugere-se a utilização do gerador de personas disponibilizado ao final da página https://www.rdstation.com/blog/marketing/persona-o-que-e/.
+
 
 
 ![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Personas/MariaSilva/Maria%20Silva-1.png)
@@ -82,17 +95,7 @@ A alteração na visibilidade da senha para checagem dos caracteres inseridos.
 </code>
 <br/>
 
-<style>
- {
-  .container{
-  display:"flex";
-  flex-direction:"row";
-  width:"100%";
-  height:"100%";
- } 
- }
- 
-</style>
+
 
 <div class="container">
  
