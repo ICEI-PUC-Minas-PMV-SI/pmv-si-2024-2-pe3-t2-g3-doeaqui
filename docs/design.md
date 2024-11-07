@@ -66,12 +66,12 @@ Apresente nesta seção os protótipos de alta fidelidade do sistema proposto. A
  <br/>
   As modais de cadastro se atentam para o distanciamento menor ou maior entre os elementos dependendo se são pertencentes a um mesmo grupo ou não. Os inputs estão mais próximos entre si, enquanto que os botôes estão mais distantes. Portanto pode-se verificar que existe a aplicação do princípio de proximidade. Os elementos e containeres encontram-se centralizados e com medidas iguais aplicadas para ambas as direções, portanto o conceito de simetria é verificável nas telas.
   Como dito anteriormente, os elementos estão mais distantes ou mais próximos dependendo de seu grupo, e isso permite ao usuário visualizar a similaridade entre elementos pertencentes a um mesmo grupo, podendo ele ser os campos ou os botões do formulário, demonstrando assim a presença do quesito de similaridade. Quanto ao quesito de destino comum, é possível perceber nas telas que a direção dos elementos do formulário mudam de acordo com o grupo, de tal forma que os campos se encontram na vertical e os botões se encontram na horizontal. Os formulários também possuem fundos e figuras parecidas com um quadrado para delimitar as áreas, de tal forma que o princípio de Fecho também está aplicado nas telas.
- É possível verificar a padronização das cores, fontes e layout para os formulários, tal como as respostas à ação do usuário, sendo uma forma de demonstrar a aplicação da regra de perseguir a consistência. As telas desenvolvidas também buscam fornecer atalhos para facilitar o processo de cadastro. São eles eles:<br/>
+ É possível verificar a padronização das cores, fontes e layout para os formulários, tal como as respostas à ação do usuário, sendo uma forma de demonstrar a aplicação da regra de perseguir a consistência. As telas desenvolvidas também buscam fornecer atalhos para facilitar o processo de cadastro. São eles eles:
  -------------------------------------------------------------------------------------------------------------
  A modal mostrada antes de abrir a tela de cadastro, que informa e fornece duas opções de cadastro, que são Pessoa Física(PF) e Pessoa Jurídica(PJ), e abre uma das modais dependendo da escolha feita.
- 
+ <br/>
 A opção dada ao usuário para voltar ou sair da tela de cadastro, sendo possível tanto pelo botão "Voltar" quanto pelo botão do ícone "X" presente nas modais, simboicamente representado como convenção para sair da modal.
-
+<br/>
 A alteração na visibilidade da senha para checagem dos caracteres inseridos.
  
  -------------------------------------------------------------------------------------------------------------
