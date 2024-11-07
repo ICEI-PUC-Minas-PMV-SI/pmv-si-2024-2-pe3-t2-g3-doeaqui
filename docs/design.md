@@ -81,6 +81,7 @@ A alteração na visibilidade da senha para checagem dos caracteres inseridos.
  <br/>
 </code>
 <br/>
+
 <style>
  .container{
   display:"flex";
@@ -89,6 +90,7 @@ A alteração na visibilidade da senha para checagem dos caracteres inseridos.
   height:"100%";
  }
 </style>
+
 <div class="container">
  
 <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/Registro_CPF.png" width="500" height="500"/>
