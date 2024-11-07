@@ -81,9 +81,9 @@ A alteração na visibilidade da senha para checagem dos caracteres inseridos.
  <br/>
 </code>
 <br/>
-<div style="display:flex; gap:10px;">
+<div style="'display:flex; gap:10px;'">
  
-![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/Registro_CPF.png)
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/Registro_CPF.png | width=100)
 ![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/Registro_CNPJ.png)
  
 </div>
