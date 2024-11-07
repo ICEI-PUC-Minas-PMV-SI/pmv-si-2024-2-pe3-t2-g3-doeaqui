@@ -49,10 +49,9 @@ Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar
 ## 4.3 Protótipos das Interfaces
 Apresente nesta seção os protótipos de alta fidelidade do sistema proposto. A fidelidade do protótipo refere-se ao nível de detalhes e funcionalidades incorporadas a ele. Assim, um protótipo de alta fidelidade é uma representação interativa do produto, baseada no computador ou em dispositivos móveis. Esse protótipo já apresenta maior semelhança com o design final em termos de detalhes e funcionalidades. No desenvolvimento dos protótipos, devem ser considerados os princípios gestálticos, as recomendações ergonômicas e as regras de design (como as 8 regras de ouro). É importante descrever no texto do relatório como os princípios gestálticos e as regras de ouro foram seguidas no projeto das interfaces. Nesta etapa deve-se dar uma ênfase na implementação do software de modo que possam ser realizados os testes com usuários na etapa seguinte.
 
-Login:
-![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/Login.png)
-
 <code>
+Tela de Login:
+ <br/>
 - Proximidade: Nota-se que os elementos de email e senha possuem uma proximidade maior entre si, já que ambos fazem parte do mesmo grupo de input(entrada de dados), que no caso seria de campo. O mesmo se verifica para os dois botões para que o usuário selecione se irá logar como uma Pessoa Física(PF) ou Pessoa Jurídica(PJ) e para os elementos do rodapé do formulário em caso de esquecimento de senha ou o usuário ainda não for registrado no sistema.
 - Boa Continuidade: O formulário foi alinhado em forma de coluna, por convenção, de forma a manter os padrões para que o usuário tenha facilidade de entender as informações sequencialmente.
 - Simetria: A tela possui simetria. As medidas para a margem e espaçamento interno(padding) foram aplicadas de forma espelhada para minimizar o máximo possível o estranhamento visual do usuário.
@@ -72,5 +71,9 @@ Regras de Ouro:
 7. Fornecer controle ao usuário: O sistema fornece o controle ao usuário sobre as ações das modais de se registrar ou efetuar o login, dando liberdade de escolha.
 8. Reduzir a carga de memória de trabalho: Como objetivo para reduzir a quantidade de esforço que o cliente teria que fazer para atingir seus objetivos, o sistema priorizou o uso de modais para cadastro, ambas na mesma URL, abrindo o modelo correto da modal de acordo com a opção selecionada na primeira modal mostrada, podendo-se selecionar a opção de PF ou PJ.
 </code>
+Login:
+![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/Login.png)
+
+
 
 
