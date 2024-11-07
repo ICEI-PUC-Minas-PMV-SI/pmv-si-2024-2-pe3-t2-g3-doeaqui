@@ -62,6 +62,17 @@ Apresente nesta seção os protótipos de alta fidelidade do sistema proposto. A
 
 ![alt text](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/Login.png)
 
+<h1>Telas Modais de Cadastro</h1>
+<code>
+ <br/>
+  Nessa tela pode-se verificar que os elementos de email e senha estão bem aproximados entre si, uma vez que fazem parte de um mesmo grupo de entrada de dados(campo). Simultaneamente, pode-se dizer o mesmo para os dois botões que permitem ao usuário escolher caso irá logar como uma Pessoa Física(PF) ou Pessoa Jurídica(PJ) e para os elementos do rodapé do formulário em caso de o usuário ainda não ser cadastrado ou ter esquecido sua senha, garantindo-se no quesito de proximidade. É possível verificar um bom fluxo do layout do formulário , e para isso, por convenção, o formulário
+ é alinhado verticalmente, em coluna, garantindo uma boa legibilidade ao usuário. Portanto, o princípio gestáltico da Boa Continuidade também é incluso.
+  Todas as medidas aplicadas no formulário se aplicam simetricamente e os elementos estão bem centralizados, o que valida o quesito da Simetria para a tela. No quesito da similaridade, é possível verificar que, como dito anteriormente, os elementos estão agrupados dentro de um mesmo container por grupo: campo(email e senha), opção não obrigatória(caixa de Lembrar Senha), opção obrigatória(botões circulares) e links suplementares(Esqueceu a senha, Cadastre-se). O fluxo de direcionamento não somente está agrupado no formulário, como um todo, mas para cada um dos seus grupos, isto é, os eleemntos dentro de um mesmo container(grupo) obedecem a uma direção comum: campos e os outros grupos com exceção da opção obrigatória estão direcionados para um mesmo local, enquanto que a exceção está alinhada horizontalmente. Portanto, a ideia de destino comum também se aplica à tela de Login. Como dito, cada grupo está dentro de um mesmo container, ou seja, uma mesma região comum a eles. Por isso o princípio da Região Comum também se aplica aqui.
+  A página foi desenvolvida de forma a manter a padronização das fontes e cores utilizadas tal como respostas similares para uma mesma ação no sistema. Portanto a regra de perseguir a consistência se aplica. Respostas às ações do usuário quando clica em Login serão mostradas em forma de poups de alerta, dependendo de inputs que ainda não foram preenchidos ou escolhidos pelo usuário, verificando-se a compatibilidade com a regra de fornecer feedbacks informativos. Como citado anteriormente, o sistema utiliza poups para informar ao usuário o status com relação a quando o sistema detecta uma requisição para logar. Quando os inputs preenchidos forem válidos e o usuário clicar em Login, isto indicará o fim de uma ação com uma poup de alerta informando que o login foi efetuado com sucesso. Portanto a regra de marcar o final dos diálogos também se aplica.
+  Quando o usuário tentar logar com inputs inválidos, o sistema responderá com um poup de alerta com uma mensagem de erro, informando o erro encontrado. Por exemplo, se o usuário tentar logar com informações inexistentes no banco de dados será informada uma mensagem dizendo-lhe que as informações não estão no banco de dados e dizendo-lhe para cadastrar-se. Assim sendo, a regra de fornecer prevenção de erros e formas simples de corrigi-los se faz presente.
+</code>
+<br/>
+
 
 
 
