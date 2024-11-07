@@ -83,12 +83,15 @@ A alteração na visibilidade da senha para checagem dos caracteres inseridos.
 <br/>
 
 <style>
- .container{
+ {
+  .container{
   display:"flex";
   flex-direction:"row";
   width:"100%";
   height:"100%";
+ } 
  }
+ 
 </style>
 
 <div class="container">
