@@ -95,12 +95,22 @@ A alteração na visibilidade da senha para checagem dos caracteres inseridos.
 
 -------------------------------------------------------------------------------------------------------------
  <br/>
- Telas Modais de Criação de Campanha
+ <h1>Telas Modais de Criação de Campanha</h1>
 <table>
   <tr>
     <td><img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/CriarCampanhaDialog.png" width="500"></td>
     <td><img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/EditarCampanhaDialog.png" width="500"></td>
   </tr>
 </table>
+
+<br>
+Sobre as telas de criar e editar campanha, O design do formulário segue diversos princípios gestálticos que facilitam a experiência do usuário. A proximidade entre os elementos relacionados, como os campos de "Data de início" e "Data de término", sugere que há uma conexão direta entre eles, ajudando o usuário a entender que essas informações devem ser preenchidas em conjunto. O alinhamento vertical dos campos e botões cria uma continuidade visual agradável, que guia o olhar do usuário de cima para baixo sem interrupções, tornando o preenchimento do formulário mais intuitivo.
+
+O layout mantém um equilíbrio visual, com uma leve simetria na disposição dos botões "Voltar" e "Salvar", posicionados lado a lado na parte inferior. Esse alinhamento torna claro que ambos são ações finais do formulário, mas com destaque no botão de "Salvar", que recebe uma cor diferenciada para indicar sua importância.
+
+A similaridade visual entre os campos de texto — todos com o mesmo estilo e tamanho — facilita a identificação e uso, enquanto o uso de uma área em tom de verde claro ao fundo delimita todo o formulário, dando uma sensação de unidade e agrupamento. Isso ajuda o usuário a identificar rapidamente que todos os elementos dentro dessa área fazem parte de uma única tarefa: a criação de uma campanha.
+
+Os ícones de calendário ao lado dos campos de data também auxiliam na usabilidade, reduzindo o esforço de preenchimento e tornando a interação mais direta. Por fim, a disposição lógica e clara dos elementos reduz a carga de memória do usuário, que não precisa se lembrar de muitos detalhes ou buscar informações extras.
+</br>
 
 
