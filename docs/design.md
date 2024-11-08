@@ -93,7 +93,14 @@ A alteração na visibilidade da senha para checagem dos caracteres inseridos.
   </tr>
 </table>
 
-
-
+-------------------------------------------------------------------------------------------------------------
+ <br/>
+ 
+<table>
+  <tr>
+    <td><img src="docs/images/Figma/CriarCampanhaDialog.png" width="500"></td>
+    <td><img src="docs/images/Figma/EditarCampanhaDialog.png" width="500"></td>
+  </tr>
+</table>
 
 
