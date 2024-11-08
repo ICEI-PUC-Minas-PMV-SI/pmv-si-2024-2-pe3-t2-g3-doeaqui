@@ -98,8 +98,8 @@ A alteração na visibilidade da senha para checagem dos caracteres inseridos.
  
 <table>
   <tr>
-    <td><img src="/images/Figma/CriarCampanhaDialog.png" width="500"></td>
-    <td><img src="/images/Figma/EditarCampanhaDialog.png" width="500"></td>
+    <td><img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/CriarCampanhaDialog.png" width="500"></td>
+    <td><img src="[/images/Figma/EditarCampanhaDialog.png](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/EditarCampanhaDialog.png)" width="500"></td>
   </tr>
 </table>
 
