@@ -113,4 +113,14 @@ A similaridade visual entre os campos de texto — todos com o mesmo estilo e ta
 Os ícones de calendário ao lado dos campos de data também auxiliam na usabilidade, reduzindo o esforço de preenchimento e tornando a interação mais direta. Por fim, a disposição lógica e clara dos elementos reduz a carga de memória do usuário, que não precisa se lembrar de muitos detalhes ou buscar informações extras.
 </br>
 
+<h1>Tela Painel de Campanhas</h1>
+<code>
+<br/>
+
+Pode-se ver que todos os elementos das campanhas ativas estão todos próximos na tela. Todos os elementos são parte de um grupo de opções de seleção. O botão para adicionar uma nova campanha e a caixa de pesquisa também são agrupados, mostrando que todos os elementos estão juntos ou “próximos”. A área de “Informações” também está separada dos outros elementos para permitir que o usuário selecione uma campanha e veja mais detalhes de maneira organizada. Todas as medidas nas telas são simétricas, e todos os elementos estão distribuídos uniformemente, mostrando que a simetria também é incorporada à interface. Também no aspecto de similaridade, os elementos estão dentro do mesmo container: lista de campanhas, campo de pesquisa e área de informações. A similaridade é garantida, pois todos os elementos relacionados à campanha ativa são visuais para indicar que estão juntos. O fluxo resultante também é claro, pois cada componente é atraído na mesma direção. À esquerda, temos a lista de campanhas, e as informações detalhadas são mostradas à direita, indicando a direção comum. Um fecho é revelado o padrão da tela, com uma borda delineando as áreas ao redor de todo o aplicativo. A página é projetada para padrão de estilo e uso consistente de fontes e cores, bem como respostas predefinidas para um comando ou ações semelhantes, portanto, a regra de perseguir a consistência está em vigor. Ao mesmo tempo, itens como o campo de pesquisa e o botão de adicionar campanha têm ícones que permitem uma compreensão rápida da funcionalidade. Se um usuário selecionar uma campanha, todas as informações detalhadas são exibidas imediatamente no painel da direita.
+
+</code>
+<br/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-doeaqui/blob/main/docs/images/Figma/Painel%20de%20Campanhas.jpg?raw=true"> 
+
 
