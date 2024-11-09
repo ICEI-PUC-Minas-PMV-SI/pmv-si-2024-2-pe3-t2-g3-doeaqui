@@ -1,4 +1,3 @@
-//Script do formulário CNPJ
 const form = document.getElementById("pj_form");
 const cnpjInpt = document.getElementById("CNPJ");
 const emailInpt = document.getElementById("pjMail");

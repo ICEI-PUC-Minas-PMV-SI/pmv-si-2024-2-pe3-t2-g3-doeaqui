@@ -1,4 +1,3 @@
-//Script do formulário CPF
 const pfForm = document.getElementById("pf_form");
 
 const cpfInput = document.getElementById("CPF");
