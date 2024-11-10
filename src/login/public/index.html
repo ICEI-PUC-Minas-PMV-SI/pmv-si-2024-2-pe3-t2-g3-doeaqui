@@ -6,6 +6,7 @@
     <title>LogIn | Projeto Doe Aqui</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./poup.css" />
+    <script src="../../main.js" defer></script>
   </head>
   <body>
     <main>
@@ -206,7 +207,6 @@
     function openModal() {
       const modal_choice = document.getElementById("modal_choice");
       modal_choice.classList.add("show");
-      console.log(modal_choice);
     }
 
     function closeModal() {
@@ -218,7 +218,6 @@
       const modal_choice = document.getElementById("modal_choice");
       modal_choice.classList.remove("show");
       modal_pf.classList.add("show");
-      console.log(modal_pf);
     }
     function closePFModal() {
       const modal_pf = document.getElementById("modal_pf");
@@ -229,7 +228,6 @@
       const modal_choice = document.getElementById("modal_choice");
       modal_choice.classList.remove("show");
       modal_pj.classList.add("show");
-      console.log(modal_pj);
     }
     function closePJModal(){
       const modal_pj = document.getElementById("modal_pj");

@@ -23,7 +23,6 @@ cpfInput.onkeydown = (ev) => {
 
   // Allow only numeric input or Backspace
   if (!isNumber && !isBackspace && !isCtrl && !isA && !isTab) {
-    console.log("Invalid input");
     return;
   }
 
@@ -54,7 +53,6 @@ cpfInput.addEventListener("input", () => {
     )}-${value.slice(9, 11)}`;
   }
   cpfInput.value = value;
-  console.log(cpfInput.value);
 });
 if (phoneInput instanceof HTMLInputElement) {
   phoneInput.addEventListener("input", (ev) => {
@@ -63,7 +61,7 @@ if (phoneInput instanceof HTMLInputElement) {
 }
 pfForm.addEventListener("submit", (ev) => {
   ev.preventDefault();
-  const data = [
+  const data =
     {
       email: emailInput.value,
       contato: phoneInput.value,
@@ -72,8 +70,6 @@ pfForm.addEventListener("submit", (ev) => {
       endereco: [addressInput.value, addressNumInput.value],
       senha: passInput.value,
       tipoUsuario: "PF",
-    },
-    { isLoggedIn: false },
-  ];
+    }
   store(data);
 });

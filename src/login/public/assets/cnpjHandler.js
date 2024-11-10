@@ -6,7 +6,6 @@ const addressInpt = document.getElementById("pjEnd");
 const addressNumInpt = document.getElementById("pjEndNum");
 const phoneInpt = document.getElementById("pjContact");
 
-console.log(phoneInpt);
 
 function phoneMask(phone) {
   return phone
@@ -29,7 +28,6 @@ cnpjInpt.addEventListener("keydown", (ev) => {
   const isA = ev.key == "A";
   const isTab = ev.key === "Tab";
   if (!isNumber && !isBackspace && !isCtrl && !isA && !isTab) {
-    console.log("Invalid Input");
     return;
   }
   if (isNumber) {
@@ -43,7 +41,6 @@ cnpjInpt.addEventListener("keydown", (ev) => {
 cnpjInpt.addEventListener("input", () => {
   if (cnpjInpt instanceof HTMLInputElement) {
     cnpjInpt.value = cnpjMask(cnpjInpt.value);
-    console.log(cnpjInpt.value);
   }
 });
 if (phoneInpt instanceof HTMLInputElement) {
@@ -53,7 +50,7 @@ if (phoneInpt instanceof HTMLInputElement) {
 }
 form.addEventListener("submit", (ev) => {
   ev.preventDefault();
-  const data = [
+  const data =
     {
       email: emailInpt.value,
       contato: phoneInpt.value,
@@ -62,8 +59,6 @@ form.addEventListener("submit", (ev) => {
       endereco: [addressInpt.value, addressNumInpt.value],
       senha: passInpt.value,
       tipoUsuario: "PJ",
-    },
-    { isLoggedIn: false },
-  ];
+    }
   store(data);
 });

@@ -1,6 +1,7 @@
 function salvarCampanhaNoLocalStorage(event) {
     event.preventDefault();
-  
+    let user = StorageData.getLogged()
+
     const nome = document.getElementById("nome").value;
     const tipo = document.getElementById("tipo").value;
     const endereco = document.getElementById("endereco").value;
@@ -9,23 +10,21 @@ function salvarCampanhaNoLocalStorage(event) {
     const temporario = document.querySelector("input[name='temporario']").checked;
     const dataInicio = document.getElementById("data-inicio").value;
     const dataFim = document.getElementById("data-fim").value;
-  
-    const cData = [
-      {
-        nomeCampanha: nome,
-        tipoCampanha: tipo,
-        enderecoCampanha: endereco,
-        contatoCampanha: contato,
-        descricaoCampanha: descricao,
-        isTemporario: temporario,
-        inicioCampanha: dataInicio,
-        fimCampanha: dataFim,
-      },
-      { usuarioLogado: retrieveLogged() },
-    ];
+
+    const cData =
+        {
+            nomeCampanha: nome,
+            tipoCampanha: tipo,
+            enderecoCampanha: endereco,
+            contatoCampanha: contato,
+            descricaoCampanha: descricao,
+            isTemporario: temporario,
+            inicioCampanha: dataInicio,
+            fimCampanha: dataFim,
+            usuario: user,
+        }
     cStore(cData);
-    console.log(cData);
-  }
-  
-  formNovaCampanha.addEventListener("submit", salvarCampanhaNoLocalStorage);
+}
+
+formNovaCampanha.addEventListener("submit", salvarCampanhaNoLocalStorage);
   

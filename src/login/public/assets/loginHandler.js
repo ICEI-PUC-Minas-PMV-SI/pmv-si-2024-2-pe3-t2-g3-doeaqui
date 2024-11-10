@@ -1,54 +1,54 @@
-const mainForm = document.getElementById("form");
-const email = document.getElementById("email");
-const password = document.getElementById("pass");
-const checkedPJ = document.querySelector("input[id='cnpj']:checked");
-const checkedPF = document.querySelector("input[id='cpf']:checked");
+const fields = {
+  mainForm : document.getElementById("form"),
+  email : document.getElementById("email"),
+  password : document.getElementById("pass"),
+  checkedPJ_PF : document.querySelectorAll("input[type='radio']"),
+}
 
-console.log(email);
-console.log(pass);
-email.focus();
+fields.email.focus();
 
-function radioChecker(radio, info) {
-  if (radio) {
-    const condition =
-      info.tipoUsuario == radio.ariaLabel
-        ? alert("Login Com Sucesso")
-        : alert(`Você não está registrado como um ${radio.ariaLabel}`);
-    return condition;
+function radioChecker(userInfo) {
+  let selectedRadio = Array.from(fields.checkedPJ_PF).find(radio => radio.checked);
+  const isUserTypeMatch = userInfo.tipoUsuario === selectedRadio.ariaLabel;
+  if (isUserTypeMatch) {
+    alert("Login Com Sucesso");
+    return true;
+  } else {
+    alert(`Você não está registrado como um ${selectedRadio.ariaLabel}`);
+    return false;
   }
 }
 
-function retrieveStorage(email, pass) {
-  const model = JSON.parse(localStorage.getItem("usuarios"));
-  if (model instanceof Array) {
-    model.forEach((st, k) => {
-      if (!(k >= 2)) {
-        return;
-      } else {
-        const info = st[0];
-        const logged = st[1];
-        console.log(info);
-        console.log(logged);
-        if (info.email === email && info.senha === pass) {
-          radioChecker(checkedPF, info);
-          radioChecker(checkedPJ, info);
-          logged.isLoggedIn = true;
-          console.log(logged.isLoggedIn);
-          localStorage.setItem("usuarios", JSON.stringify(model));
-          window.location.href = "/campanha/campanhaDoador.html";
-          console.log("User logged in status changed to true");
-          return;
-        } else {
-          alert(
-            "Os campos estão incorretos. Tente novamente por favor ou efetue um cadastro"
-          );
-          return;
-        }
-      }
-    });
+function login(email, password) {
+  const users = StorageData.getUsers();
+  const user = findUserByEmailAndPassword(users, email, password);
+  if (radioChecker(user) && user) {
+    handleSuccessfulLogin(user);
+  } else {
+    handleFailedLogin();
   }
 }
-mainForm.addEventListener("submit", (ev) => {
+
+function findUserByEmailAndPassword(users, email, password) {
+  return users.find(user => user.email === email && user.senha === password);
+}
+
+function handleSuccessfulLogin(user) {
+    StorageData.setLogged(user);
+    redirectUserToSuccessPage();
+}
+
+function handleFailedLogin() {
+  StorageData.setLogged();
+  alert("Os campos estão incorretos. Tente novamente por favor ou efetue um cadastro")
+}
+
+function redirectUserToSuccessPage() {
+  window.location.href = "../../../campanha/campanhaDoador.html";
+}
+
+
+fields.mainForm.addEventListener("submit", (ev) => {
   ev.preventDefault();
-  retrieveStorage(email.value, pass.value);
+  login(fields.email .value, fields.password.value);
 });
