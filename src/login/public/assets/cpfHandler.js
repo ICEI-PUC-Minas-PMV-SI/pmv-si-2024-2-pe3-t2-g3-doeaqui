@@ -18,7 +18,7 @@ cpfInput.onkeydown = (ev) => {
   const isNumber = /^[0-9]$/.test(ev.key);
   const isBackspace = ev.key === "Backspace";
   const isCtrl = ev.key === "Control";
-  const isA = ev.key == "A";
+  const isA = ev.key === "A";
   const isTab = ev.key === "Tab";
 
   // Allow only numeric input or Backspace

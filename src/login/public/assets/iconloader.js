@@ -2,7 +2,7 @@ const holder = document.querySelectorAll("svg")[0];
 const personHolder = document.querySelector("#svg_pf");
 const companyHolder = document.querySelector("#svg_pj");
 const pass = document.querySelector("input[type=password]");
-const pfPass = document.querySelectorAll("input[type=password")[1];
+const pfPass = document.querySelectorAll("input[type=password]")[1];
 const pjPass = document.querySelectorAll("input[type=password]")[2];
 const mailHolder = document.getElementsByClassName("mailer-div")[0];
 const passHolder = document.querySelector(".locker-div");
