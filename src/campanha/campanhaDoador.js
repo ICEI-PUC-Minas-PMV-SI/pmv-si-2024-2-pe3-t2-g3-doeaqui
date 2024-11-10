@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#editBtn")?.addEventListener("click", editarCampanha)
     document.getElementById("pesquisar-campanha")?.addEventListener("input", filterCampanhas);
 
-    // if (loggedUser?.tipoUsuario === "PF") {
-    //     document.querySelector("#open-modal-btn").style.display = "none";
-    //     document.querySelector("#editBtn").style.display = "none";
-    //     document.querySelector("#delBtn").style.display = "none";
-    // }
+    if (loggedUser?.tipoUsuario === "PF") {
+        document.querySelector("#open-modal-btn").style.display = "none";
+        document.querySelector("#editBtn").style.display = "none";
+        document.querySelector("#delBtn").style.display = "none";
+    }
 
     function retornarCampanhas() {
         if (loggedUser?.tipoUsuario === "PJ") filteredCampanhas = campanhas = dataFromStorage?.filter((data) => data.usuario === loggedUser);
