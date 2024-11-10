@@ -2,7 +2,7 @@ const holder = document.querySelectorAll("svg")[0];
 const personHolder = document.querySelector("#svg_pf");
 const companyHolder = document.querySelector("#svg_pj");
 const pass = document.querySelector("input[type=password]");
-const pfPass = document.querySelectorAll("input[type=password")[1];
+const pfPass = document.querySelectorAll("input[type=password]")[1];
 const pjPass = document.querySelectorAll("input[type=password]")[2];
 const mailHolder = document.getElementsByClassName("mailer-div")[0];
 const passHolder = document.querySelector(".locker-div");
@@ -10,10 +10,8 @@ const mailDiagHolder = document.getElementsByClassName("mailer-div")[1];
 const passDiagHolder = document.querySelectorAll(".locker-div")[1];
 const mailPjHolder = document.getElementsByClassName("mailer-div")[2];
 const passPjHolder = document.querySelectorAll(".locker-div")[2];
-console.log(passHolder);
-console.log(passDiagHolder);
 
-passHolder.onclick = () => console.log("Clicked");
+
 const iconloader = () => {
   return `
   <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none">
