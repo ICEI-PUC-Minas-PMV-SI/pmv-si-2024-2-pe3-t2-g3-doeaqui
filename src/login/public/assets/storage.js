@@ -38,5 +38,5 @@ function store(newUser) {
  * @return {boolean} - Retorna `true` se um usuário com o mesmo CPF ou CNPJ já existir na lista de usuários, caso contrário, retorna `false`.
  */
 function doesUserExist(users, newUser) {
-  return users.some(user => user.cpf === newUser.cpf || user.cnpj === newUser.cnpj);
+  return users.some(user => (newUser.cpf && user.cpf === newUser.cpf) ||  (user.cnpj && user.cnpj === newUser.cnpj))
 }

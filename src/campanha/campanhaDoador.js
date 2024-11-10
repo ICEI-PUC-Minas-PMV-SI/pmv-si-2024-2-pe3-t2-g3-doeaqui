@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function retornarCampanhas() {
-        if (loggedUser?.tipoUsuario === "PJ") filteredCampanhas = campanhas = dataFromStorage?.filter((data) => data.usuario === loggedUser);
+        if (loggedUser?.tipoUsuario === "PJ") filteredCampanhas = campanhas = dataFromStorage?.filter((data) => data.usuario.id === loggedUser.id);
         else filteredCampanhas = campanhas = dataFromStorage;
         renderizarCampanhas(campanhas);
     }

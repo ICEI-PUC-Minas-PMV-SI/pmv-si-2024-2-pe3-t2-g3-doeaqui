@@ -36,7 +36,7 @@ const StorageData = {
     removeUsers: (userId) => removeItemInLS(StorageKeys.USERS, userId),
     removeCampanhas: (campanhaId) => removeItemInLS(StorageKeys.CAMPANHAS, campanhaId),
     getLogged: () => getItemFromLS(StorageKeys.USER_lOGGED)[0],
-    setLogged: (value) => setItemInLS(StorageKeys.USER_lOGGED, value),
+    setLogged: (value) => setLoggedUser(value),
     editCampanha: (campanhaId, newData) => editItemInLS(StorageKeys.CAMPANHAS, campanhaId, newData),
 }
 
@@ -118,5 +118,10 @@ function editItemInLS(key, id, newData) {
  */
 function setLogged(value) {
     localStorage.setItem(StorageKeys.USER_lOGGED, JSON.stringify(value))
+}
+
+
+function setLoggedUser(value) {
+    localStorage.setItem(StorageKeys.USER_lOGGED, JSON.stringify([value]))
 }
 

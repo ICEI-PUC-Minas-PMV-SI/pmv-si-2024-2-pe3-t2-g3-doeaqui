@@ -20,6 +20,7 @@ function radioChecker(userInfo) {
 }
 
 function login(email, password) {
+  debugger
   const users = StorageData.getUsers();
   const user = findUserByEmailAndPassword(users, email, password);
   if (radioChecker(user) && user) {
