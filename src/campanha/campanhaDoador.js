@@ -54,15 +54,14 @@ document.addEventListener("DOMContentLoaded", () => {
                   <div class="doacoes">
                       <b>Doações coletadas:</b>
                       <div>                    
-                          <span class="badge-doacao">Doacoes Aqui</span>
+                          <span>${campanha.tipoCampanha}</span>
                       </div>
                   </div>
-                  <div class="campanha-descricao">                
-                      <p>${campanha.descricaoCampanha}</p>
-                  </div>
+                  <b>Descrição Doações:</b>      
+                  <p>${campanha.descricaoCampanha}</p> 
+                  <b>Endereço da instuição:</b>          
                   <div class="pontosDeColeta">
-                      <span class="badge-ptDoacao">PontoDoacao</span> 
-                      
+                      <span>${campanha.enderecoCampanha}</span> 
                   </div>
           `;
         document.querySelectorAll(".campanha-item").forEach((item) => {

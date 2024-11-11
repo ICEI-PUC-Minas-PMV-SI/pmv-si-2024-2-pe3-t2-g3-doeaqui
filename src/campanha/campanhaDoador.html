@@ -1,277 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Painel de Campanhas - DoeAqui</title>
-    <link rel="stylesheet" href="campanhaDoador.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add,delete,draw"
-    />
-    <script src="../main.js"></script>
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <a href="/index.html" class="logo">Doe Aqui</a>
-        <div class="nav-links">
-          <a href="/index.html">Início</a>
-          <a href="#">Sobre</a>
-          <a href="#">Projetos</a>
-          <a href="#">Contato</a>
-        </div>
-        <button class="menu-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel de Campanhas - DoeAqui</title>
+  <link rel="stylesheet" href="campanhaDoador.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add,delete,draw" />
+  <script src="../main.js"></script>
+</head>
 
+<body>
+  <nav class="navbar">
     <div class="container">
-      <h1>Painel de Campanhas</h1>
-      <div class="dashboard">
-        <div class="campanhas-ativas">
-          <div class="campanha-ativa-header">
-            <h2>Campanhas Ativas</h2>
-            <button
-              id="open-modal-btn"
-              onclick="openModal()"
-              class="material-symbols-outlined btn-icon btn-nova-campanha"
-            >
-              add
-            </button>
-          </div>
-          <div class="search-container">
-            <input
-              type="text"
-              id="pesquisar-campanha"
-              placeholder="Pesquisar campanha"
-            />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </div>
-          <div id="lista-campanhas" class="lista-campanhas">
-            <!-- As campanhas serão inseridas aqui pelo JavaScript -->
+      <a href="/index.html" class="logo">Doe Aqui</a>
+      <div class="nav-links">
+        <a href="/index.html">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Projetos</a>
+        <a href="#">Contato</a>
+      </div>
+      <button class="menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Painel de Campanhas</h1>
+    <div class="dashboard">
+      <div class="campanhas-ativas">
+        <div class="campanha-ativa-header">
+          <h2>Campanhas Ativas</h2>
+          <button id="open-modal-btn" onclick="openModal()" class="material-symbols-outlined btn-icon btn-nova-campanha">
+            add
+          </button>
+        </div>
+        <div class="search-container">
+          <input type="text" id="pesquisar-campanha" placeholder="Pesquisar campanha" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+        <div id="lista-campanhas" class="lista-campanhas">
+          <!-- As campanhas serão inseridas aqui pelo JavaScript -->
+        </div>
+      </div>
+      <div class="informacoes">
+        <div class="campanha-ativa-header">
+          <h2>Informações</h2>
+          <div>
+            <span class="material-symbols-outlined btn-icon" onclick="openEditModal()" id="editBtn">draw</span>
+            <span class="material-symbols-outlined btn-icon" onclick="closeEditModal()" cor="red" id="delBtn">delete</span>
           </div>
         </div>
-        <div class="informacoes">
-          <div class="campanha-ativa-header">
-            <h2>Informações</h2>
-            <div>
-              <span
-                class="material-symbols-outlined btn-icon"
-                onclick="openEditModal()"
-                id="editBtn"
-                >draw</span
-              >
-              <span
-                class="material-symbols-outlined btn-icon"
-                onclick="closeEditModal()"
-                cor="red"
-                id="delBtn"
-                >delete</span
-              >
-            </div>
-          </div>
-          <div id="detalhes-campanha" class="detalhes-campanha-class">
-            <p>Selecione uma campanha para ver mais informações.</p>
-          </div>
+        <div id="detalhes-campanha" class="detalhes-campanha-class">
+          <p>Selecione uma campanha para ver mais informações.</p>
         </div>
       </div>
     </div>
-    <br />
-    <br />
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 DoeAqui. Todos os direitos reservados.</p>
-        <div class="footer-links">
-          <a href="#">Termos de Uso</a>
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Contato</a>
-        </div>
-      </div>
-    </footer>
-
-    <div id="modal-nova-campanha" class="modal">
-      <div class="modal-overlay" id="modal">
-        <div class="modal-container">
-          <button class="close-modal-btn" onclick="closeModal()">×</button>
-          <h1>Criar campanha</h1>
-          <form>
-            <div class="form-group">
-              <label for="nome">Nome da campanha</label>
-              <input type="text" id="nome" name="nome" required />
-            </div>
-            <div class="form-group">
-              <label for="tipo">Tipo de doação</label>
-              <select id="tipo" name="tipo" required>
-                <option value="">Selecione o tipo</option>
-                <option value="dinheiro">Dinheiro</option>
-                <option value="alimentos">Alimentos</option>
-                <option value="roupas">Roupas</option>
-                <option value="outros">Outros</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="endereco">Endereço</label>
-              <input type="text" id="endereco" name="endereco" required />
-            </div>
-            <div class="form-group">
-              <label for="contato">Contato</label>
-              <input type="text" id="contato" name="contato" required />
-            </div>
-            <div class="form-group">
-              <label for="descricao">Descrição</label>
-              <textarea
-                id="descricao"
-                name="descricao"
-                rows="4"
-                required
-              ></textarea>
-            </div>
-            <div class="form-group">
-              <label>
-                <input type="checkbox" name="temporario" /> É temporário?
-              </label>
-            </div>
-            <div class="date-inputs">
-              <div class="form-group">
-                <label for="data-inicio">Data de início</label>
-                <input
-                  type="date"
-                  id="data-inicio"
-                  name="data-inicio"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="data-fim">Data de término</label>
-                <input type="date" id="data-fim" name="data-fim" required />
-              </div>
-            </div>
-            <div class="buttons">
-              <button type="button" onclick="closeModal()">Voltar</button>
-              <button type="submit">Salvar</button>
-            </div>
-          </form>
-        </div>
+  </div>
+  <br />
+  <br />
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 DoeAqui. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Termos de Uso</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Contato</a>
       </div>
     </div>
+  </footer>
 
-    <div id="modal-editar-campanha" class="modal">
-      <div class="modal-overlay" id="modal-editar">
-        <div class="modal-container">
-          <button class="close-modal-btn" onclick="closeEditModal()">×</button>
-          <h1>Editar Campanha</h1>
-          <form>
+  <div id="modal-nova-campanha" class="modal">
+    <div class="modal-overlay" id="modal">
+      <div class="modal-container">
+        <button class="close-modal-btn" onclick="closeModal()">×</button>
+        <h1>Criar campanha</h1>
+        <form>
+          <div class="form-group">
+            <label for="nome">Nome da campanha</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <div class="form-group">
+            <label for="tipo">Tipo de doação</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">Selecione o tipo</option>
+              <option value="dinheiro">Dinheiro</option>
+              <option value="alimentos">Alimentos</option>
+              <option value="roupas">Roupas</option>
+              <option value="outros">Outros</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" required />
+          </div>
+          <div class="form-group">
+            <label for="contato">Contato</label>
+            <input type="text" id="contato" name="contato" required />
+          </div>
+          <div class="form-group">
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="temporario" /> É temporário?
+            </label>
+          </div>
+          <div class="date-inputs">
             <div class="form-group">
-              <label for="nomeEditar">Nome da campanha</label>
-              <input type="text" id="nomeEditar" name="nomeEditar" />
+              <label for="data-inicio">Data de início</label>
+              <input type="date" id="data-inicio" name="data-inicio" required />
             </div>
             <div class="form-group">
-              <label for="tipoEditar">Tipo de doação</label>
-              <select id="tipoEditar" name="tipoEditar">
-                <option value="">Selecione o tipo</option>
-                <option value="dinheiro">Dinheiro</option>
-                <option value="alimentos">Alimentos</option>
-                <option value="roupas">Roupas</option>
-                <option value="outros">Outros</option>
-              </select>
+              <label for="data-fim">Data de término</label>
+              <input type="date" id="data-fim" name="data-fim" required />
             </div>
-            <div class="form-group">
-              <label for="enderecoEditar">Endereço</label>
-              <input type="text" id="enderecoEditar" name="enderecoEditar" />
-            </div>
-            <div class="form-group">
-              <label for="contatoEditar">Contato</label>
-              <input type="text" id="contatoEditar" name="contatoEditar" />
-            </div>
-            <div class="form-group">
-              <label for="descricaoEditar">Descrição</label>
-              <textarea
-                id="descricaoEditar"
-                name="descricaoEditar"
-                rows="4"
-                required
-              ></textarea>
-            </div>
-            <div class="form-group">
-              <label>
-                <input type="checkbox" name="temporarioEditar" /> É temporário?
-              </label>
-            </div>
-            <div class="date-inputs">
-              <div class="form-group">
-                <label for="data-inicio">Data de início</label>
-                <input
-                  type="date"
-                  id="data-inicioEditar"
-                  name="data-inicioEditar"
-                />
-              </div>
-              <div class="form-group">
-                <label for="data-fim">Data de término</label>
-                <input type="date" id="data-fimEditar" name="data-fimEditar" />
-              </div>
-            </div>
-            <div class="buttons">
-              <button type="button" onclick="closeEditModal()">Voltar</button>
-              <button type="submit">Salvar</button>
-            </div>
-          </form>
-        </div>
+          </div>
+          <div class="buttons">
+            <button type="button" onclick="closeModal()">Voltar</button>
+            <button type="submit">Salvar</button>
+          </div>
+        </form>
       </div>
     </div>
+  </div>
 
-    <script src="./storageCampanha.js" defer></script>
-    <script src="./campanhaDoador.js" defer></script>
-    <script src="./formHandler.js" defer></script>
+  <div id="modal-editar-campanha" class="modal">
+    <div class="modal-overlay" id="modal-editar">
+      <div class="modal-container">
+        <button class="close-modal-btn" onclick="closeEditModal()">×</button>
+        <h1>Editar Campanha</h1>
+        <form>
+          <div class="form-group">
+            <label for="nomeEditar">Nome da campanha</label>
+            <input type="text" id="nomeEditar" name="nomeEditar" />
+          </div>
+          <div class="form-group">
+            <label for="tipoEditar">Tipo de doação</label>
+            <select id="tipoEditar" name="tipoEditar">
+              <option value="">Selecione o tipo</option>
+              <option value="dinheiro">Dinheiro</option>
+              <option value="alimentos">Alimentos</option>
+              <option value="roupas">Roupas</option>
+              <option value="outros">Outros</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="enderecoEditar">Endereço</label>
+            <input type="text" id="enderecoEditar" name="enderecoEditar" />
+          </div>
+          <div class="form-group">
+            <label for="contatoEditar">Contato</label>
+            <input type="text" id="contatoEditar" name="contatoEditar" />
+          </div>
+          <div class="form-group">
+            <label for="descricaoEditar">Descrição</label>
+            <textarea id="descricaoEditar" name="descricaoEditar" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="temporarioEditar" /> É temporário?
+            </label>
+          </div>
+          <div class="date-inputs">
+            <div class="form-group">
+              <label for="data-inicio">Data de início</label>
+              <input type="date" id="data-inicioEditar" name="data-inicioEditar" />
+            </div>
+            <div class="form-group">
+              <label for="data-fim">Data de término</label>
+              <input type="date" id="data-fimEditar" name="data-fimEditar" />
+            </div>
+          </div>
+          <div class="buttons">
+            <button type="button" onclick="closeEditModal()">Voltar</button>
+            <button type="submit" onclick="closeEditModal()">Salvar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    <script>
-      function openModal() {
-        document.getElementById("modal").classList.add("show");
-      }
+  <script src="./storageCampanha.js" defer></script>
+  <script src="./campanhaDoador.js" defer></script>
+  <script src="./formHandler.js" defer></script>
 
-      function closeModal() {
-        document.getElementById("modal").classList.remove("show");
-      }
-      function openEditModal() {
-        document.getElementById("modal-editar").classList.add("show");
-      }
-      function closeEditModal() {
-        document.getElementById("modal-editar").classList.remove("show");
-      }
-    </script>
-  </body>
+  <script>
+    function openModal() {
+      document.getElementById("modal").classList.add("show");
+    }
+
+    function closeModal() {
+      document.getElementById("modal").classList.remove("show");
+    }
+    function openEditModal() {
+      document.getElementById("modal-editar").classList.add("show");
+    }
+    function closeEditModal() {
+      document.getElementById("modal-editar").classList.remove("show");
+    }
+  </script>
+</body>
+
 </html>
