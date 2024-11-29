@@ -49,7 +49,7 @@ function handleFailedLogin() {
 }
 
 function redirectUserToSuccessPage() {
-  window.location.href = "/src/campanha/campanhaDoador.html";
+  window.location.href = "../../../campanha/campanhaDoador.html";
 }
 
 fields.mainForm.addEventListener("submit", (ev) => {
