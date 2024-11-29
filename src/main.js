@@ -8,38 +8,36 @@
  * - USER_LOGGED: uma string que representa a chave para armazenamento de informações do usuário atualmente logado.
  */
 const StorageKeys = {
-    USERS: "usuarios",
-    CAMPANHAS: "campanhas",
-    USER_lOGGED: "userLogged",
-}
-
+  USERS: "usuarios",
+  CAMPANHAS: "campanhas",
+  USER_lOGGED: "userLogged",
+};
 
 /**
  *  inicializar o localStorage com as chaves especificadas caso estas ainda não estejam presentes.
  *
  */
 Object.values(StorageKeys).forEach((key) => {
-    if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify([]));
-
+  if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify([]));
 });
-
 
 /**
  * StorageData é um objeto que contém métodos para manipulação de dados armazenados no LocalStorage.
  * Cada método realiza operações de leitura, escrita, remoção e edição de dados associados às chaves definidas em StorageKeys.
  */
 const StorageData = {
-    getUsers: () => getItemFromLS(StorageKeys.USERS),
-    getCampanhas: () => getItemFromLS(StorageKeys.CAMPANHAS),
-    setUsers: (users) => setItemInLS(StorageKeys.USERS, users),
-    setCampanhas: (campanhas) => setItemInLS(StorageKeys.CAMPANHAS, campanhas),
-    removeUsers: (userId) => removeItemInLS(StorageKeys.USERS, userId),
-    removeCampanhas: (campanhaId) => removeItemInLS(StorageKeys.CAMPANHAS, campanhaId),
-    getLogged: () => getItemFromLS(StorageKeys.USER_lOGGED)[0],
-    setLogged: (value) => setLoggedUser(value),
-    editCampanha: (campanhaId, newData) => editItemInLS(StorageKeys.CAMPANHAS, campanhaId, newData),
-}
-
+  getUsers: () => getItemFromLS(StorageKeys.USERS),
+  getCampanhas: () => getItemFromLS(StorageKeys.CAMPANHAS),
+  setUsers: (users) => setItemInLS(StorageKeys.USERS, users),
+  setCampanhas: (campanhas) => setItemInLS(StorageKeys.CAMPANHAS, campanhas),
+  removeUsers: (userId) => removeItemInLS(StorageKeys.USERS, userId),
+  removeCampanhas: (campanhaId) =>
+    removeItemInLS(StorageKeys.CAMPANHAS, campanhaId),
+  getLogged: () => getItemFromLS(StorageKeys.USER_lOGGED)[0],
+  setLogged: (value) => setLoggedUser(value),
+  editCampanha: (campanhaId, newData) =>
+    editItemInLS(StorageKeys.CAMPANHAS, campanhaId, newData),
+};
 
 /**
  * Recupera um item do Local Storage e o converte de volta para um objeto JavaScript.
@@ -48,9 +46,8 @@ const StorageData = {
  * @return {Object|null} Retorna o objeto JavaScript armazenado no Local Storage ou null se não for encontrado.
  */
 function getItemFromLS(key) {
-    return JSON.parse(localStorage.getItem(key))
+  return JSON.parse(localStorage.getItem(key));
 }
-
 
 /**
  * Adiciona um item ao armazenamento local (localStorage) sob uma chave especificada.
@@ -63,13 +60,15 @@ function getItemFromLS(key) {
  * @return {void} Essa função não retorna um valor.
  */
 function setItemInLS(key, value) {
-    let storage = getItemFromLS(key)
-    if (!storage) storage = []
-    localStorage.setItem(key, JSON.stringify([...storage, {...value, id: storage.length + 1}]))
+  let storage = getItemFromLS(key);
+  if (!storage) storage = [];
+  localStorage.setItem(
+    key,
+    JSON.stringify([...storage, { ...value, id: storage.length + 1 }])
+  );
 }
 
-
-/**
+/*
  * Remove um item do armazenamento local (localStorage) com base na chave e no ID fornecidos.
  *
  * @param {string} key - A chave do item no localStorage.
@@ -77,15 +76,14 @@ function setItemInLS(key, value) {
  * @return {void} Esta função não retorna valor.
  */
 function removeItemInLS(key, id) {
-    let storage = getItemFromLS(key)
-    if (!storage) return
-    let item = storage.find((item) => item.id === id)
-    let index = storage.indexOf(item)
-    if (index === -1) return
-    storage.splice(index, 1)
-    localStorage.setItem(key, JSON.stringify(storage))
+  let storage = getItemFromLS(key);
+  if (!storage) return;
+  let item = storage.find((item) => item.id === id);
+  let index = storage.indexOf(item);
+  if (index === -1) return;
+  storage.splice(index, 1);
+  localStorage.setItem(key, JSON.stringify(storage));
 }
-
 
 /**
  * Edita um item específico no Local Storage, identificado por uma chave e um identificador, substituindo-o com novos dados.
@@ -96,15 +94,14 @@ function removeItemInLS(key, id) {
  * @return {void} - Não retorna nada.
  */
 function editItemInLS(key, id, newData) {
-    let storage = getItemFromLS(key)
-    if (!storage) return
-    let item = storage.find((item) => item.id === id)
-    let index = storage.indexOf(item)
-    if (index === -1) return
-    storage.splice(index, 1)
-    localStorage.setItem(key, JSON.stringify([...storage, newData]))
+  let storage = getItemFromLS(key);
+  if (!storage) return;
+  let item = storage.find((item) => item.id === id);
+  let index = storage.indexOf(item);
+  if (index === -1) return;
+  storage.splice(index, 1);
+  localStorage.setItem(key, JSON.stringify([...storage, newData]));
 }
-
 
 /**
  * Armazena o estado de login do usuário no localStorage.
@@ -117,11 +114,9 @@ function editItemInLS(key, id, newData) {
  * @return {void} Esta função não retorna nenhum valor.
  */
 function setLogged(value) {
-    localStorage.setItem(StorageKeys.USER_lOGGED, JSON.stringify(value))
+  localStorage.setItem(StorageKeys.USER_lOGGED, JSON.stringify(value));
 }
-
 
 function setLoggedUser(value) {
-    localStorage.setItem(StorageKeys.USER_lOGGED, JSON.stringify([value]))
+  localStorage.setItem(StorageKeys.USER_lOGGED, JSON.stringify([value]));
 }
-
